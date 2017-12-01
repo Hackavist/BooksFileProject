@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Books_File_Project.Admin;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -16,7 +17,7 @@ namespace Books_File_Project
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new AddBook());
         }
     }
 }

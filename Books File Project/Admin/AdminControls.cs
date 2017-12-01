@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.IO;
 using System.Windows.Forms;
 
 namespace Books_File_Project.Admin
@@ -17,9 +11,15 @@ namespace Books_File_Project.Admin
             InitializeComponent();
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
 
+        private void AddBook_Click(object sender, EventArgs e)
+        {
+            FileStream File = new FileStream("Books.txt", FileMode.Append, FileAccess.Write);
+            StreamWriter sw = new StreamWriter(File);
+
+
+            sw.Close();
+            File.Close();
         }
     }
 }
