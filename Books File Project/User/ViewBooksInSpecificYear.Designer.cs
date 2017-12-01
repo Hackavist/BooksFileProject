@@ -104,7 +104,6 @@
             this.label5.Size = new System.Drawing.Size(18, 19);
             this.label5.TabIndex = 7;
             this.label5.Text = "5";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // label6
             // 
@@ -160,7 +159,6 @@
             this.Controls.Add(this.label1);
             this.Name = "ViewBooksInSpecificYear";
             this.Text = "ViewBooksInSpecificYear";
-            this.Load += new System.EventHandler(this.ViewBooksInSpecificYear_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
