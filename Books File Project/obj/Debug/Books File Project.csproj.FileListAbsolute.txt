@@ -1,12 +1,10 @@
-D:\Work\Books File Project\Books File Project\bin\Debug\Books File Project.exe.config
-D:\Work\Books File Project\Books File Project\bin\Debug\Books File Project.exe
-D:\Work\Books File Project\Books File Project\bin\Debug\Books File Project.pdb
-D:\Work\Books File Project\Books File Project\obj\Debug\Books File Project.csprojResolveAssemblyReference.cache
-D:\Work\Books File Project\Books File Project\obj\Debug\Books_File_Project.Admin.AddBook.resources
-D:\Work\Books File Project\Books File Project\obj\Debug\Books_File_Project.Admin.AdminControls.resources
-D:\Work\Books File Project\Books File Project\obj\Debug\Books_File_Project.AdminLogIn.resources
-D:\Work\Books File Project\Books File Project\obj\Debug\Books_File_Project.Properties.Resources.resources
-D:\Work\Books File Project\Books File Project\obj\Debug\Books File Project.csproj.GenerateResource.Cache
-D:\Work\Books File Project\Books File Project\obj\Debug\Books File Project.csproj.CoreCompileInputs.cache
-D:\Work\Books File Project\Books File Project\obj\Debug\Books File Project.exe
-D:\Work\Books File Project\Books File Project\obj\Debug\Books File Project.pdb
+C:\Users\hazem\Source\Repos\BooksFileProject\Books File Project\bin\Debug\Books File Project.exe.config
+C:\Users\hazem\Source\Repos\BooksFileProject\Books File Project\bin\Debug\Books File Project.exe
+C:\Users\hazem\Source\Repos\BooksFileProject\Books File Project\bin\Debug\Books File Project.pdb
+C:\Users\hazem\Source\Repos\BooksFileProject\Books File Project\obj\Debug\Books File Project.csprojResolveAssemblyReference.cache
+C:\Users\hazem\Source\Repos\BooksFileProject\Books File Project\obj\Debug\Books_File_Project.Admin.AdminControls.resources
+C:\Users\hazem\Source\Repos\BooksFileProject\Books File Project\obj\Debug\Books_File_Project.AdminLogIn.resources
+C:\Users\hazem\Source\Repos\BooksFileProject\Books File Project\obj\Debug\Books_File_Project.Properties.Resources.resources
+C:\Users\hazem\Source\Repos\BooksFileProject\Books File Project\obj\Debug\Books File Project.csproj.GenerateResource.Cache
+C:\Users\hazem\Source\Repos\BooksFileProject\Books File Project\obj\Debug\Books File Project.exe
+C:\Users\hazem\Source\Repos\BooksFileProject\Books File Project\obj\Debug\Books File Project.pdb
