@@ -24,7 +24,7 @@ namespace Books_File_Project.Classes
         public Book(  string sn, string bn , string py , string ai)
         {
             BookName = bn;
-            SerialNumber = s;
+            SerialNumber = sn;
             PublishYear = py;
             AuthorId = ai;
         }
