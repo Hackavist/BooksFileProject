@@ -8,3 +8,6 @@ C:\Users\hazem\Source\Repos\BooksFileProject\Books File Project\obj\Debug\Books_
 C:\Users\hazem\Source\Repos\BooksFileProject\Books File Project\obj\Debug\Books File Project.csproj.GenerateResource.Cache
 C:\Users\hazem\Source\Repos\BooksFileProject\Books File Project\obj\Debug\Books File Project.exe
 C:\Users\hazem\Source\Repos\BooksFileProject\Books File Project\obj\Debug\Books File Project.pdb
+E:\File proj  n\Books File Project\bin\Debug\Books File Project.exe.config
+E:\File proj  n\Books File Project\obj\Debug\Books File Project.exe
+E:\File proj  n\Books File Project\obj\Debug\Books File Project.pdb
