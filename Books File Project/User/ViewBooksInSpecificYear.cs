@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using Books_File_Project.Classes;
 
 namespace Books_File_Project.User
 {
@@ -19,9 +20,9 @@ namespace Books_File_Project.User
         }
 
         //object of Books class
-        Books b = new Books();
+        Book b = new Book();
 
-        List<Books> x = new List<Books>();
+        List<Book> x = new List<Book>();
 
         private void EnterButton_Click(object sender, EventArgs e)
         {
@@ -42,13 +43,12 @@ namespace Books_File_Project.User
                 {
                     field = record[i].Split('@');
 
-                    b = new book(field[0], field[1], field[2], field[3]);
+                    b = new Book(field[0], field[1], field[2], field[3]);
                     
 
-                    if(year==field[2])//field of published year
+                    if(year==field[2])
                     {
                         x.Add(b);
-                        //display
                         find = true;
                     }
                 }
