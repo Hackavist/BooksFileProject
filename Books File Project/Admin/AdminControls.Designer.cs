@@ -40,6 +40,7 @@
             this.AddBook.TabIndex = 0;
             this.AddBook.Text = "Add A Book";
             this.AddBook.UseVisualStyleBackColor = true;
+            this.AddBook.Click += new System.EventHandler(this.AddBook_Click);
             // 
             // AddAuther
             // 
@@ -49,7 +50,7 @@
             this.AddAuther.TabIndex = 1;
             this.AddAuther.Text = "Add An Auther";
             this.AddAuther.UseVisualStyleBackColor = true;
-            this.AddAuther.Click += new System.EventHandler(this.button2_Click);
+
             // 
             // AdminControls
             // 
