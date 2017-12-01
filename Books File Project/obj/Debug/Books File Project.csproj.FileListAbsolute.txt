@@ -11,3 +11,11 @@ C:\Users\hazem\Source\Repos\BooksFileProject\Books File Project\obj\Debug\Books 
 E:\File proj  n\Books File Project\bin\Debug\Books File Project.exe.config
 E:\File proj  n\Books File Project\obj\Debug\Books File Project.exe
 E:\File proj  n\Books File Project\obj\Debug\Books File Project.pdb
+E:\File proj  n\Books File Project\obj\Debug\Books File Project.csprojResolveAssemblyReference.cache
+E:\File proj  n\Books File Project\obj\Debug\Books_File_Project.Admin.AdminControls.resources
+E:\File proj  n\Books File Project\obj\Debug\Books_File_Project.AdminLogIn.resources
+E:\File proj  n\Books File Project\obj\Debug\Books_File_Project.Properties.Resources.resources
+E:\File proj  n\Books File Project\obj\Debug\Books_File_Project.User.ViewAllBooks.resources
+E:\File proj  n\Books File Project\obj\Debug\Books File Project.csproj.GenerateResource.Cache
+E:\File proj  n\Books File Project\bin\Debug\Books File Project.exe
+E:\File proj  n\Books File Project\bin\Debug\Books File Project.pdb

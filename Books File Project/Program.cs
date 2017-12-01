@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using Books_File_Project.User;
 namespace Books_File_Project
 {
     static class Program
@@ -17,7 +17,7 @@ namespace Books_File_Project
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new AddBook());
+            Application.Run(new ViewAllBooks());
         }
     }
 }
