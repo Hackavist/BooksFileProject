@@ -1,2 +1,10 @@
 C:\Users\hazem\Source\Repos\BooksFileProject\Books File Project\bin\Debug\Books File Project.exe.config
-E:\File proj  n\Books File Project\bin\Debug\Books File Project.exe.config
+C:\Users\hazem\Source\Repos\BooksFileProject\Books File Project\bin\Debug\Books File Project.exe
+C:\Users\hazem\Source\Repos\BooksFileProject\Books File Project\bin\Debug\Books File Project.pdb
+C:\Users\hazem\Source\Repos\BooksFileProject\Books File Project\obj\Debug\Books File Project.csprojResolveAssemblyReference.cache
+C:\Users\hazem\Source\Repos\BooksFileProject\Books File Project\obj\Debug\Books_File_Project.Admin.AdminControls.resources
+C:\Users\hazem\Source\Repos\BooksFileProject\Books File Project\obj\Debug\Books_File_Project.AdminLogIn.resources
+C:\Users\hazem\Source\Repos\BooksFileProject\Books File Project\obj\Debug\Books_File_Project.Properties.Resources.resources
+C:\Users\hazem\Source\Repos\BooksFileProject\Books File Project\obj\Debug\Books File Project.csproj.GenerateResource.Cache
+C:\Users\hazem\Source\Repos\BooksFileProject\Books File Project\obj\Debug\Books File Project.exe
+C:\Users\hazem\Source\Repos\BooksFileProject\Books File Project\obj\Debug\Books File Project.pdb
