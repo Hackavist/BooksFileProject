@@ -14,12 +14,7 @@ namespace Books_File_Project.Admin
 
         private void AddBook_Click(object sender, EventArgs e)
         {
-            FileStream File = new FileStream("Books.txt", FileMode.Append, FileAccess.Write);
-            StreamWriter sw = new StreamWriter(File);
-
-
-            sw.Close();
-            File.Close();
+           
         }
     }
 }

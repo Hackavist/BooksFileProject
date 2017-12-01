@@ -52,6 +52,12 @@
     <Compile Include="Admin\AddAuthor.Designer.cs">
       <DependentUpon>AddAuthor.cs</DependentUpon>
     </Compile>
+    <Compile Include="Admin\AddBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\AddBook.Designer.cs">
+      <DependentUpon>AddBook.cs</DependentUpon>
+    </Compile>
     <Compile Include="Admin\AdminControls.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -80,8 +86,17 @@
     <Compile Include="User\ViewAllAuthors.Designer.cs">
       <DependentUpon>ViewAllAuthors.cs</DependentUpon>
     </Compile>
+    <Compile Include="User\ViewBooksInSpecificYear.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User\ViewBooksInSpecificYear.Designer.cs">
+      <DependentUpon>ViewBooksInSpecificYear.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Admin\AddAuthor.resx">
       <DependentUpon>AddAuthor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\AddBook.resx">
+      <DependentUpon>AddBook.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Admin\AdminControls.resx">
       <DependentUpon>AdminControls.cs</DependentUpon>
@@ -101,6 +116,9 @@
     </Compile>
     <EmbeddedResource Include="User\ViewAllAuthors.resx">
       <DependentUpon>ViewAllAuthors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User\ViewBooksInSpecificYear.resx">
+      <DependentUpon>ViewBooksInSpecificYear.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

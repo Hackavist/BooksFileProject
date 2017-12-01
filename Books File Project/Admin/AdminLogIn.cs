@@ -16,5 +16,14 @@ namespace Books_File_Project
         {
             InitializeComponent();
         }
+
+        private void LogInButton_Click(object sender, EventArgs e)
+        {
+            //If  Authenticated  
+            Admin.AdminControls ad = new Admin.AdminControls();
+            ad.Show();
+
+            //this.Close();
+        }
     }
 }
