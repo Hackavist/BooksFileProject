@@ -30,7 +30,7 @@ namespace Books_File_Project.User
             while (sr.Peek() != -1)
             {
                 records = sr.ReadLine().Split('#');
-                for (int i = 0; i < records.Length - 1; i++)
+                for (int i = 0; i < records.Length - 1; i++ )
                 {
                     fields = records[i].Split('@');
                     label1.Text += fields[0]+'\n';
