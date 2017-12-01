@@ -66,6 +66,10 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="User\ViewAllAuthers.cs" />
+    <Compile Include="User\ViewAllAuthers.Designer.cs">
+      <DependentUpon>ViewAllAuthers.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Admin\AdminControls.resx">
       <DependentUpon>AdminControls.cs</DependentUpon>
     </EmbeddedResource>
