@@ -80,6 +80,12 @@
     <Compile Include="User\ViewAllAuthors.Designer.cs">
       <DependentUpon>ViewAllAuthors.cs</DependentUpon>
     </Compile>
+    <Compile Include="User\ViewBooksInSpecificYear.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User\ViewBooksInSpecificYear.Designer.cs">
+      <DependentUpon>ViewBooksInSpecificYear.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Admin\AddAuthor.resx">
       <DependentUpon>AddAuthor.cs</DependentUpon>
     </EmbeddedResource>
@@ -101,6 +107,9 @@
     </Compile>
     <EmbeddedResource Include="User\ViewAllAuthors.resx">
       <DependentUpon>ViewAllAuthors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User\ViewBooksInSpecificYear.resx">
+      <DependentUpon>ViewBooksInSpecificYear.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
