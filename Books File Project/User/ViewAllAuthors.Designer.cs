@@ -49,30 +49,36 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(932, 327);
+            this.dataGridView1.Size = new System.Drawing.Size(1228, 327);
             this.dataGridView1.TabIndex = 1;
             // 
             // Author_ID
             // 
             this.Author_ID.HeaderText = "Author ID";
             this.Author_ID.Name = "Author_ID";
+            this.Author_ID.ReadOnly = true;
             this.Author_ID.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.Author_ID.Width = 225;
             // 
             // Author_Name
             // 
             this.Author_Name.HeaderText = "Author Name";
             this.Author_Name.Name = "Author_Name";
+            this.Author_Name.ReadOnly = true;
+            this.Author_Name.Width = 300;
             // 
             // Author_Email
             // 
             this.Author_Email.HeaderText = "Author Email";
             this.Author_Email.Name = "Author_Email";
+            this.Author_Email.ReadOnly = true;
+            this.Author_Email.Width = 350;
             // 
             // ViewAllAuthors
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(956, 491);
+            this.ClientSize = new System.Drawing.Size(1252, 491);
             this.Controls.Add(this.dataGridView1);
             this.Name = "ViewAllAuthors";
             this.Text = "ViewAllAuthors";
