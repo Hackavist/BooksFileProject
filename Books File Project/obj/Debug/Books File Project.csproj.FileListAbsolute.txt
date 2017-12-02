@@ -19,3 +19,5 @@ C:\Users\lenovo\Source\Repos\BooksFileProject\Books File Project\obj\Debug\Books
 C:\Users\lenovo\Source\Repos\BooksFileProject\Books File Project\bin\Debug\Books File Project.exe.config
 C:\Users\lenovo\Source\Repos\BooksFileProject\Books File Project\bin\Debug\Books File Project.exe
 C:\Users\lenovo\Source\Repos\BooksFileProject\Books File Project\bin\Debug\Books File Project.pdb
+C:\Users\lenovo\Source\Repos\BooksFileProject\Books File Project\obj\Debug\Books_File_Project.Admin.AddAuthor.resources
+C:\Users\lenovo\Source\Repos\BooksFileProject\Books File Project\obj\Debug\Books_File_Project.User.ViewAllAuthors.resources

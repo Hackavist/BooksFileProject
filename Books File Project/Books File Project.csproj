@@ -126,6 +126,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="User\Authors.txt" />
+    <Content Include="Admin\Admin.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
