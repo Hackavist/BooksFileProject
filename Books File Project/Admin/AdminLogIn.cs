@@ -22,7 +22,7 @@ namespace Books_File_Project
         private void LogInButton_Click(object sender, EventArgs e)
         {
             
-
+            //get username and password from textboxes
             string username = UserName.Text;
             string password = Password.Text;
 
@@ -30,12 +30,14 @@ namespace Books_File_Project
 
             bool find = false;  
 
+            //check that input is not empty
             if (string.IsNullOrEmpty(username) || string.IsNullOrEmpty(password) || string.IsNullOrWhiteSpace(username) || string.IsNullOrWhiteSpace(password))
             {
                 MessageBox.Show("Please Enter Username And Password");
                 
 
             }
+            //open the file and read the admin's data
             else
             {
                 FileStream fs = new FileStream("Admin.txt", FileMode.Open);
@@ -50,6 +52,7 @@ namespace Books_File_Project
                         string un = field[0];
                         string pass = field[1];
 
+                        //check if the entered username and password exist in the file
                         if (username == un && password == pass)
                         {
                             find = true;
@@ -59,12 +62,14 @@ namespace Books_File_Project
                             this.Close();
 
                         }
+                        //found username but the password is not matching
                         else if(username==un && password!=pass)
                         {
                             find = true;
                             MessageBox.Show("Wrong Password");
                         }
                     }
+                    //did not find the admin with the specified username and password
                     if (find == false)
                 {
                     MessageBox.Show("Admin Not Found");
