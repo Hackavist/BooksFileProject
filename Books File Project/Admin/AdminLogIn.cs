@@ -28,11 +28,12 @@ namespace Books_File_Project
 
             string[] record, field;
 
-            bool find = false;
+            bool find = false;  
 
             if (string.IsNullOrEmpty(username) || string.IsNullOrEmpty(password) || string.IsNullOrWhiteSpace(username) || string.IsNullOrWhiteSpace(password))
             {
                 MessageBox.Show("Please Enter Username And Password");
+                
 
             }
             else
@@ -58,9 +59,10 @@ namespace Books_File_Project
                             this.Close();
 
                         }
-                        else if(username!=un || password!=pass)
+                        else if(username==un && password!=pass)
                         {
-                            MessageBox.Show("Wrong Username Or Password");
+                            find = true;
+                            MessageBox.Show("Wrong Password");
                         }
                     }
                     if (find == false)
