@@ -18,7 +18,7 @@ namespace Books_File_Project.User
             InitializeComponent();
         }
         List<String> s = new List<string>();
-        private void ViewAllBooks_Load(object sender, EventArgs e)
+        private void ViewAllBooks_Load(object sender, EventArgs e )
         {
             label1.Text = "";
             Book bk = new Book();
