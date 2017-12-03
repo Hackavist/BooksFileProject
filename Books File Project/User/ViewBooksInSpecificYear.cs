@@ -26,12 +26,12 @@ namespace Books_File_Project.User
 
         private void EnterButton_Click(object sender, EventArgs e)
         {
-            /*
+            
             label2.Text = "Serial Number";
             label3.Text = "Book Name";
             label4.Text = "Publish Year";
             label5.Text = "Author ID";
-            */
+            
             FileStream fs = new FileStream("Books.txt", FileMode.Open);
             StreamReader sr = new StreamReader(fs);
 

@@ -61,9 +61,9 @@
             // 
             // EnterButton
             // 
-            this.EnterButton.Location = new System.Drawing.Point(603, 166);
+            this.EnterButton.Location = new System.Drawing.Point(603, 161);
             this.EnterButton.Name = "EnterButton";
-            this.EnterButton.Size = new System.Drawing.Size(108, 27);
+            this.EnterButton.Size = new System.Drawing.Size(108, 34);
             this.EnterButton.TabIndex = 3;
             this.EnterButton.Text = "Enter";
             this.EnterButton.UseVisualStyleBackColor = true;
