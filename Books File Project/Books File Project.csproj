@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin\AddAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\AddAdmin.designer.cs">
+      <DependentUpon>AddAdmin.cs</DependentUpon>
+    </Compile>
     <Compile Include="Admin\AddAuthor.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -70,6 +76,13 @@
     <Compile Include="Admin\AdminLogIn.Designer.cs">
       <DependentUpon>AdminLogIn.cs</DependentUpon>
     </Compile>
+    <Compile Include="Admin\RemoveAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\RemoveAdmin.Designer.cs">
+      <DependentUpon>RemoveAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\AdminClass.cs" />
     <Compile Include="Classes\Author.cs" />
     <Compile Include="Classes\Book.cs" />
     <Compile Include="Form1.cs">
@@ -98,12 +111,9 @@
     <Compile Include="User\ViewBooksInSpecificYear.Designer.cs">
       <DependentUpon>ViewBooksInSpecificYear.cs</DependentUpon>
     </Compile>
-    <Compile Include="User\ViewBooksOfSpecificAuthor.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="User\ViewBooksOfSpecificAuthor.Designer.cs">
-      <DependentUpon>ViewBooksOfSpecificAuthor.cs</DependentUpon>
-    </Compile>
+    <EmbeddedResource Include="Admin\AddAdmin.resx">
+      <DependentUpon>AddAdmin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Admin\AddAuthor.resx">
       <DependentUpon>AddAuthor.cs</DependentUpon>
     </EmbeddedResource>
@@ -115,6 +125,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Admin\AdminLogIn.resx">
       <DependentUpon>AdminLogIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\RemoveAdmin.resx">
+      <DependentUpon>RemoveAdmin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -134,9 +147,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="User\ViewBooksInSpecificYear.resx">
       <DependentUpon>ViewBooksInSpecificYear.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="User\ViewBooksOfSpecificAuthor.resx">
-      <DependentUpon>ViewBooksOfSpecificAuthor.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
