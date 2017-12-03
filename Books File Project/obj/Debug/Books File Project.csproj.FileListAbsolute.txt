@@ -34,3 +34,4 @@ C:\Users\hazem\Source\Repos\BooksFileProject\Books File Project\obj\Debug\Books_
 C:\Users\hazem\Source\Repos\BooksFileProject\Books File Project\obj\Debug\Books_File_Project.Admin.AddBook.resources
 C:\Users\hazem\Source\Repos\BooksFileProject\Books File Project\obj\Debug\Books_File_Project.User.ViewAllAuthors.resources
 C:\Users\hazem\Source\Repos\BooksFileProject\Books File Project\obj\Debug\Books_File_Project.User.ViewBooksInSpecificYear.resources
+C:\Users\hazem\Source\Repos\BooksFileProject\Books File Project\obj\Debug\Books_File_Project.Admin.RemoveAdmin.resources
