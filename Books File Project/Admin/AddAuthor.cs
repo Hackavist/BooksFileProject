@@ -35,7 +35,7 @@ namespace Books_File_Project.Admin
             char[] record = new char[50];
 
             id.CopyTo(0, record, 0,id.Length);
-            name.CopyTo(0, record, 5, name.Length);
+            name.CopyTo(0, record,5, name.Length);
             email.CopyTo(0, record, 25, email.Length);
 
             sw.Write(record, 0, 50);
