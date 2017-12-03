@@ -38,7 +38,7 @@ namespace Books_File_Project.Admin
             name.CopyTo(0, record, 5, name.Length);
             email.CopyTo(0, record, 25, email.Length);
 
-            sw.WriteLine(record, 0, 50);
+            sw.Write(record, 0, 50);
 
             sw.Close();
             AuthorNameText.Text = "";
