@@ -55,11 +55,10 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Goudy Old Style", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(28, 104);
+            this.label1.Location = new System.Drawing.Point(28, 106);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(17, 19);
+            this.label1.Size = new System.Drawing.Size(0, 19);
             this.label1.TabIndex = 3;
-            this.label1.Text = "1";
             // 
             // label2
             // 
@@ -67,9 +66,8 @@
             this.label2.Font = new System.Drawing.Font("Goudy Old Style", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(182, 104);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(18, 21);
+            this.label2.Size = new System.Drawing.Size(0, 21);
             this.label2.TabIndex = 4;
-            this.label2.Text = "2";
             // 
             // label3
             // 
@@ -77,9 +75,8 @@
             this.label3.Font = new System.Drawing.Font("Goudy Old Style", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(448, 104);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(18, 21);
+            this.label3.Size = new System.Drawing.Size(0, 21);
             this.label3.TabIndex = 5;
-            this.label3.Text = "3";
             // 
             // label4
             // 
@@ -87,9 +84,8 @@
             this.label4.Font = new System.Drawing.Font("Goudy Old Style", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(611, 104);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(18, 21);
+            this.label4.Size = new System.Drawing.Size(0, 21);
             this.label4.TabIndex = 6;
-            this.label4.Text = "4";
             // 
             // label5
             // 
