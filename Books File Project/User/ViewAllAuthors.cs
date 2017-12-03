@@ -41,8 +41,9 @@ namespace Books_File_Project.User
                 char[] id = new char[5];
                 char[] name = new char[20];
                 char[] email = new char[25];
-                
-                string tmp = sr.ReadLine();
+                char [] togetfromfile = new char[50];
+                sr.Read(togetfromfile, 0, 50);
+                string tmp = new string (togetfromfile);
                 tmp.CopyTo(0,id,0,5);
                 tmp.CopyTo(5, name, 0, 20);
                 tmp.CopyTo(25, email, 0, 25);
