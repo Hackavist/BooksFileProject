@@ -1,9 +1,10 @@
-﻿using System;
+﻿using Books_File_Project.Admin;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Books_File_Project.Admin;
+using Books_File_Project.User;
 namespace Books_File_Project
 {
     static class Program
@@ -16,7 +17,7 @@ namespace Books_File_Project
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new AdminLogIn ());
+            Application.Run(new ViewAllBooks());
         }
     }
 }
