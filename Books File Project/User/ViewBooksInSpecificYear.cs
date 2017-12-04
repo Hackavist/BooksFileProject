@@ -96,5 +96,10 @@ namespace Books_File_Project.User
                 YearTextBox.Text = "";
             
         }
+
+        private void ViewBooksInSpecificYear_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
