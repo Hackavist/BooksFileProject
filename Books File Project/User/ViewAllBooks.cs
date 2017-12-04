@@ -44,8 +44,11 @@ namespace Books_File_Project.User
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void Back_Click(object sender, EventArgs e)
         {
+            UserWelcome uw = new UserWelcome();
+            uw.Show();
+            this.Hide();
 
         }
     }

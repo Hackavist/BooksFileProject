@@ -34,8 +34,9 @@
             this.Author_Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Author_Email = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SortById = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.SortByName = new System.Windows.Forms.Button();
+            this.SortByEmail = new System.Windows.Forms.Button();
+            this.Back = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -79,7 +80,7 @@
             // 
             // SortById
             // 
-            this.SortById.Location = new System.Drawing.Point(50, 401);
+            this.SortById.Location = new System.Drawing.Point(122, 401);
             this.SortById.Name = "SortById";
             this.SortById.Size = new System.Drawing.Size(260, 60);
             this.SortById.TabIndex = 2;
@@ -87,33 +88,44 @@
             this.SortById.UseVisualStyleBackColor = true;
             this.SortById.Click += new System.EventHandler(this.SortById_Click);
             // 
-            // button2
+            // SortByName
             // 
-            this.button2.Location = new System.Drawing.Point(467, 401);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(260, 60);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "Show Authors Sorted by Name";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.SortByName.Location = new System.Drawing.Point(539, 401);
+            this.SortByName.Name = "SortByName";
+            this.SortByName.Size = new System.Drawing.Size(260, 60);
+            this.SortByName.TabIndex = 3;
+            this.SortByName.Text = "Show Authors Sorted by Name";
+            this.SortByName.UseVisualStyleBackColor = true;
+            this.SortByName.Click += new System.EventHandler(this.SortByName_Click);
             // 
-            // button3
+            // SortByEmail
             // 
-            this.button3.Location = new System.Drawing.Point(884, 401);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(260, 60);
-            this.button3.TabIndex = 4;
-            this.button3.Text = "Show Authors Sorted by Email";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.SortByEmail.Location = new System.Drawing.Point(956, 401);
+            this.SortByEmail.Name = "SortByEmail";
+            this.SortByEmail.Size = new System.Drawing.Size(260, 60);
+            this.SortByEmail.TabIndex = 4;
+            this.SortByEmail.Text = "Show Authors Sorted by Email";
+            this.SortByEmail.UseVisualStyleBackColor = true;
+            this.SortByEmail.Click += new System.EventHandler(this.SortByEmail_Click);
+            // 
+            // Back
+            // 
+            this.Back.Location = new System.Drawing.Point(12, 359);
+            this.Back.Name = "Back";
+            this.Back.Size = new System.Drawing.Size(65, 31);
+            this.Back.TabIndex = 5;
+            this.Back.Text = "Back";
+            this.Back.UseVisualStyleBackColor = true;
+            this.Back.Click += new System.EventHandler(this.Back_Click);
             // 
             // ViewAllAuthors
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1252, 491);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.Back);
+            this.Controls.Add(this.SortByEmail);
+            this.Controls.Add(this.SortByName);
             this.Controls.Add(this.SortById);
             this.Controls.Add(this.dataGridView1);
             this.Name = "ViewAllAuthors";
@@ -132,7 +144,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Author_Name;
         private System.Windows.Forms.DataGridViewTextBoxColumn Author_Email;
         private System.Windows.Forms.Button SortById;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button SortByName;
+        private System.Windows.Forms.Button SortByEmail;
+        private System.Windows.Forms.Button Back;
     }
 }
