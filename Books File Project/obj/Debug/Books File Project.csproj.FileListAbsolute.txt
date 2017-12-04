@@ -50,3 +50,4 @@ E:\mo7sen\Books File Project\obj\Debug\Books_File_Project.User.ViewAllAuthors.re
 E:\mo7sen\Books File Project\obj\Debug\Books_File_Project.User.ViewAllBooks.resources
 E:\mo7sen\Books File Project\obj\Debug\Books_File_Project.User.ViewBooksInSpecificYear.resources
 E:\mo7sen\Books File Project\obj\Debug\Books File Project.csproj.GenerateResource.Cache
+E:\mo7sen\Books File Project\obj\Debug\Books_File_Project.Admin.RemoveAdmin.resources

@@ -76,6 +76,13 @@
     <Compile Include="Admin\AdminLogIn.Designer.cs">
       <DependentUpon>AdminLogIn.cs</DependentUpon>
     </Compile>
+    <Compile Include="Admin\RemoveAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\RemoveAdmin.Designer.cs">
+      <DependentUpon>RemoveAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\AdminClass.cs" />
     <Compile Include="Classes\Author.cs" />
     <Compile Include="Classes\Book.cs" />
     <Compile Include="Form1.cs">
@@ -118,6 +125,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Admin\AdminLogIn.resx">
       <DependentUpon>AdminLogIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\RemoveAdmin.resx">
+      <DependentUpon>RemoveAdmin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
