@@ -69,6 +69,11 @@ namespace Books_File_Project.Admin
             }
         }
 
-        
+        private void Back_Click(object sender, EventArgs e)
+        {
+            AdminControls ad = new AdminControls();
+            ad.Show();
+            this.Hide();
+        }
     }
 }

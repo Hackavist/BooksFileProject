@@ -21,57 +21,59 @@ namespace Books_File_Project
 
         private void LogInButton_Click(object sender, EventArgs e)
         {
-            
 
             string username = UserName.Text;
             string password = Password.Text;
 
             string[] record, field;
 
-            bool find = false;  
+            bool find = false;
 
             if (string.IsNullOrEmpty(username) || string.IsNullOrEmpty(password) || string.IsNullOrWhiteSpace(username) || string.IsNullOrWhiteSpace(password))
             {
                 MessageBox.Show("Please Enter Username And Password");
-                
-
             }
             else
             {
                 FileStream fs = new FileStream("Admin.txt", FileMode.Open);
                 StreamReader sr = new StreamReader(fs);
+
                 while (sr.Peek() != -1 && find == false)
                 {
                     record = sr.ReadLine().Split('#');
 
-                    for (int i = 0; i < record.Length-1; i++)
+                    for (int i = 0; i < record.Length - 1; i++)
                     {
                         field = record[i].Split('@');
+
                         string un = field[0];
                         string pass = field[1];
 
                         if (username == un && password == pass)
                         {
                             find = true;
+
                             MessageBox.Show("Successful Log In");
+
                             AdminControls ad = new AdminControls();
                             ad.Show();
-                            this.Close();
+                            this.Hide();
 
                         }
-                        else if(username==un && password!=pass)
+                        else if (username == un && password != pass)
                         {
                             find = true;
                             MessageBox.Show("Wrong Password");
                         }
                     }
+
                     if (find == false)
-                {
-                    MessageBox.Show("Admin Not Found");
-                }
+                    {
+                        MessageBox.Show("Admin Not Found");
+                    }
 
                 }
-               
+
                 sr.Close();
                 fs.Close();
             }

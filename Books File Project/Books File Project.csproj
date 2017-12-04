@@ -164,5 +164,8 @@
   <ItemGroup>
     <Content Include="Admin\Admin.txt" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

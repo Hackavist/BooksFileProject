@@ -51,3 +51,21 @@ E:\mo7sen\Books File Project\obj\Debug\Books_File_Project.User.ViewAllBooks.reso
 E:\mo7sen\Books File Project\obj\Debug\Books_File_Project.User.ViewBooksInSpecificYear.resources
 E:\mo7sen\Books File Project\obj\Debug\Books File Project.csproj.GenerateResource.Cache
 E:\mo7sen\Books File Project\obj\Debug\Books_File_Project.Admin.RemoveAdmin.resources
+D:\Work\Books File Project\Books File Project\bin\Debug\Books File Project.exe.config
+D:\Work\Books File Project\Books File Project\bin\Debug\Books File Project.exe
+D:\Work\Books File Project\Books File Project\bin\Debug\Books File Project.pdb
+D:\Work\Books File Project\Books File Project\obj\Debug\Books File Project.csprojResolveAssemblyReference.cache
+D:\Work\Books File Project\Books File Project\obj\Debug\Books_File_Project.Admin.AddAdmin.resources
+D:\Work\Books File Project\Books File Project\obj\Debug\Books_File_Project.Admin.AddAuthor.resources
+D:\Work\Books File Project\Books File Project\obj\Debug\Books_File_Project.Admin.AddBook.resources
+D:\Work\Books File Project\Books File Project\obj\Debug\Books_File_Project.Admin.AdminControls.resources
+D:\Work\Books File Project\Books File Project\obj\Debug\Books_File_Project.AdminLogIn.resources
+D:\Work\Books File Project\Books File Project\obj\Debug\Books_File_Project.Admin.RemoveAdmin.resources
+D:\Work\Books File Project\Books File Project\obj\Debug\Books_File_Project.Properties.Resources.resources
+D:\Work\Books File Project\Books File Project\obj\Debug\Books_File_Project.User.ViewAllAuthors.resources
+D:\Work\Books File Project\Books File Project\obj\Debug\Books_File_Project.User.ViewAllBooks.resources
+D:\Work\Books File Project\Books File Project\obj\Debug\Books_File_Project.User.ViewBooksInSpecificYear.resources
+D:\Work\Books File Project\Books File Project\obj\Debug\Books File Project.csproj.GenerateResource.Cache
+D:\Work\Books File Project\Books File Project\obj\Debug\Books File Project.csproj.CoreCompileInputs.cache
+D:\Work\Books File Project\Books File Project\obj\Debug\Books File Project.exe
+D:\Work\Books File Project\Books File Project\obj\Debug\Books File Project.pdb

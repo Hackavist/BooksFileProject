@@ -9,7 +9,7 @@ namespace Books_File_Project.Classes
     public class AdminClass
     {
         public string Username { get; set; }
-        public string Password{ get; set; }
+        public string Password { get; set; }
         public AdminClass()
         {
             Username = "";

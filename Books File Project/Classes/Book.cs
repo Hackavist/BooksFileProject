@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿
 namespace Books_File_Project.Classes
 {
     class Book
@@ -21,7 +16,7 @@ namespace Books_File_Project.Classes
             AuthorId = "";
         }
 
-        public Book(  string sn, string bn , string py , string ai)
+        public Book(string sn, string bn, string py, string ai)
         {
             BookName = bn;
             SerialNumber = sn;
@@ -31,5 +26,5 @@ namespace Books_File_Project.Classes
 
     }
 
-    
+
 }
