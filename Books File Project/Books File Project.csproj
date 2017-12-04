@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin\AddAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\AddAdmin.designer.cs">
+      <DependentUpon>AddAdmin.cs</DependentUpon>
+    </Compile>
     <Compile Include="Admin\AddAuthor.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -98,6 +104,9 @@
     <Compile Include="User\ViewBooksInSpecificYear.Designer.cs">
       <DependentUpon>ViewBooksInSpecificYear.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Admin\AddAdmin.resx">
+      <DependentUpon>AddAdmin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Admin\AddAuthor.resx">
       <DependentUpon>AddAuthor.cs</DependentUpon>
     </EmbeddedResource>
