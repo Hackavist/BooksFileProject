@@ -27,7 +27,7 @@ namespace Books_File_Project.User
 
         private void ViewAllAuthors_Click(object sender, EventArgs e)
         {
-            ViewAllBooks va = new ViewAllBooks();
+            User.ViewAllAuthors va = new ViewAllAuthors();
             va.Show();
             this.Hide();
         }
