@@ -32,6 +32,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.RemoveButton = new System.Windows.Forms.Button();
             this.areyousure = new System.Windows.Forms.CheckBox();
+            this.Back = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // UsernameTextBox
@@ -70,11 +71,22 @@
             this.areyousure.Text = "are you sure you want to remove this admin ?";
             this.areyousure.UseVisualStyleBackColor = true;
             // 
+            // Back
+            // 
+            this.Back.Location = new System.Drawing.Point(34, 49);
+            this.Back.Name = "Back";
+            this.Back.Size = new System.Drawing.Size(115, 31);
+            this.Back.TabIndex = 4;
+            this.Back.Text = "Admin Controls ";
+            this.Back.UseVisualStyleBackColor = true;
+            this.Back.Click += new System.EventHandler(this.Back_Click);
+            // 
             // RemoveAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(560, 415);
+            this.Controls.Add(this.Back);
             this.Controls.Add(this.areyousure);
             this.Controls.Add(this.RemoveButton);
             this.Controls.Add(this.label1);
@@ -92,5 +104,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button RemoveButton;
         private System.Windows.Forms.CheckBox areyousure;
+        private System.Windows.Forms.Button Back;
     }
 }

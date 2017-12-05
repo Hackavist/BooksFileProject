@@ -21,62 +21,59 @@ namespace Books_File_Project
 
         private void LogInButton_Click(object sender, EventArgs e)
         {
-            
-            //get username and password from textboxes
+
             string username = UserName.Text;
             string password = Password.Text;
 
             string[] record, field;
 
-            bool find = false;  
+            bool find = false;
 
-            //check that input is not empty
             if (string.IsNullOrEmpty(username) || string.IsNullOrEmpty(password) || string.IsNullOrWhiteSpace(username) || string.IsNullOrWhiteSpace(password))
             {
                 MessageBox.Show("Please Enter Username And Password");
-                
-
             }
-            //open the file and read the admin's data
             else
             {
                 FileStream fs = new FileStream("Admin.txt", FileMode.Open);
                 StreamReader sr = new StreamReader(fs);
+
                 while (sr.Peek() != -1 && find == false)
                 {
                     record = sr.ReadLine().Split('#');
 
-                    for (int i = 0; i < record.Length-1; i++)
+                    for (int i = 0; i < record.Length - 1; i++)
                     {
                         field = record[i].Split('@');
+
                         string un = field[0];
                         string pass = field[1];
 
-                        //check if the entered username and password exist in the file
                         if (username == un && password == pass)
                         {
                             find = true;
+
                             MessageBox.Show("Successful Log In");
+
                             AdminControls ad = new AdminControls();
                             ad.Show();
-                            this.Close();
+                            this.Hide();
 
                         }
-                        //found username but the password is not matching
-                        else if(username==un && password!=pass)
+                        else if (username == un && password != pass)
                         {
                             find = true;
                             MessageBox.Show("Wrong Password");
                         }
                     }
-                    //did not find the admin with the specified username and password
+
                     if (find == false)
-                {
-                    MessageBox.Show("Admin Not Found");
-                }
+                    {
+                        MessageBox.Show("Admin Not Found");
+                    }
 
                 }
-               
+
                 sr.Close();
                 fs.Close();
             }

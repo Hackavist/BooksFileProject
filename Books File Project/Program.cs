@@ -17,11 +17,7 @@ namespace Books_File_Project
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-
-            Application.Run(new ViewBooksInSpecificYear());
-
-            Application.Run(new ViewAllBooks());
-
+            Application.Run(new UserWelcome());
         }
     }
 }

@@ -35,13 +35,15 @@
             this.AuthorNameText = new System.Windows.Forms.TextBox();
             this.AuthorIDText = new System.Windows.Forms.TextBox();
             this.AuthorEmailText = new System.Windows.Forms.TextBox();
+            this.BackBTN = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // AddAuthroButton
             // 
-            this.AddAuthroButton.Location = new System.Drawing.Point(85, 241);
+            this.AddAuthroButton.Location = new System.Drawing.Point(113, 297);
+            this.AddAuthroButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.AddAuthroButton.Name = "AddAuthroButton";
-            this.AddAuthroButton.Size = new System.Drawing.Size(100, 26);
+            this.AddAuthroButton.Size = new System.Drawing.Size(133, 32);
             this.AddAuthroButton.TabIndex = 0;
             this.AddAuthroButton.Text = "Add Author";
             this.AddAuthroButton.UseVisualStyleBackColor = true;
@@ -50,60 +52,76 @@
             // AuthorName
             // 
             this.AuthorName.AutoSize = true;
-            this.AuthorName.Location = new System.Drawing.Point(22, 22);
+            this.AuthorName.Location = new System.Drawing.Point(29, 27);
+            this.AuthorName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.AuthorName.Name = "AuthorName";
-            this.AuthorName.Size = new System.Drawing.Size(35, 13);
+            this.AuthorName.Size = new System.Drawing.Size(45, 17);
             this.AuthorName.TabIndex = 1;
             this.AuthorName.Text = "Name";
             // 
             // AuthorID
             // 
             this.AuthorID.AutoSize = true;
-            this.AuthorID.Location = new System.Drawing.Point(22, 87);
+            this.AuthorID.Location = new System.Drawing.Point(29, 107);
+            this.AuthorID.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.AuthorID.Name = "AuthorID";
-            this.AuthorID.Size = new System.Drawing.Size(18, 13);
+            this.AuthorID.Size = new System.Drawing.Size(21, 17);
             this.AuthorID.TabIndex = 2;
             this.AuthorID.Text = "ID";
             // 
             // AuthorEmail
             // 
             this.AuthorEmail.AutoSize = true;
-            this.AuthorEmail.Location = new System.Drawing.Point(22, 157);
+            this.AuthorEmail.Location = new System.Drawing.Point(29, 193);
+            this.AuthorEmail.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.AuthorEmail.Name = "AuthorEmail";
-            this.AuthorEmail.Size = new System.Drawing.Size(32, 13);
+            this.AuthorEmail.Size = new System.Drawing.Size(42, 17);
             this.AuthorEmail.TabIndex = 3;
             this.AuthorEmail.Text = "Email";
-            this.AuthorEmail.Click += new System.EventHandler(this.label3_Click);
             // 
             // AuthorNameText
             // 
-            this.AuthorNameText.Location = new System.Drawing.Point(25, 47);
+            this.AuthorNameText.Location = new System.Drawing.Point(33, 58);
+            this.AuthorNameText.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.AuthorNameText.MaxLength = 20;
             this.AuthorNameText.Name = "AuthorNameText";
-            this.AuthorNameText.Size = new System.Drawing.Size(100, 20);
+            this.AuthorNameText.Size = new System.Drawing.Size(132, 22);
             this.AuthorNameText.TabIndex = 4;
             // 
             // AuthorIDText
             // 
-            this.AuthorIDText.Location = new System.Drawing.Point(25, 119);
+            this.AuthorIDText.Location = new System.Drawing.Point(33, 146);
+            this.AuthorIDText.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.AuthorIDText.MaxLength = 5;
             this.AuthorIDText.Name = "AuthorIDText";
-            this.AuthorIDText.Size = new System.Drawing.Size(100, 20);
+            this.AuthorIDText.Size = new System.Drawing.Size(132, 22);
             this.AuthorIDText.TabIndex = 5;
             // 
             // AuthorEmailText
             // 
-            this.AuthorEmailText.Location = new System.Drawing.Point(25, 185);
+            this.AuthorEmailText.Location = new System.Drawing.Point(33, 228);
+            this.AuthorEmailText.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.AuthorEmailText.MaxLength = 25;
             this.AuthorEmailText.Name = "AuthorEmailText";
-            this.AuthorEmailText.Size = new System.Drawing.Size(100, 20);
+            this.AuthorEmailText.Size = new System.Drawing.Size(132, 22);
             this.AuthorEmailText.TabIndex = 6;
+            // 
+            // BackBTN
+            // 
+            this.BackBTN.Location = new System.Drawing.Point(247, 17);
+            this.BackBTN.Name = "BackBTN";
+            this.BackBTN.Size = new System.Drawing.Size(120, 36);
+            this.BackBTN.TabIndex = 7;
+            this.BackBTN.Text = "Admin Controls ";
+            this.BackBTN.UseVisualStyleBackColor = true;
+            this.BackBTN.Click += new System.EventHandler(this.BackBTN_Click);
             // 
             // AddAuthor
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 299);
+            this.ClientSize = new System.Drawing.Size(379, 368);
+            this.Controls.Add(this.BackBTN);
             this.Controls.Add(this.AuthorEmailText);
             this.Controls.Add(this.AuthorIDText);
             this.Controls.Add(this.AuthorNameText);
@@ -111,6 +129,7 @@
             this.Controls.Add(this.AuthorID);
             this.Controls.Add(this.AuthorName);
             this.Controls.Add(this.AddAuthroButton);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "AddAuthor";
             this.Text = "AddAuthor";
             this.ResumeLayout(false);
@@ -127,5 +146,6 @@
         private System.Windows.Forms.TextBox AuthorNameText;
         private System.Windows.Forms.TextBox AuthorIDText;
         private System.Windows.Forms.TextBox AuthorEmailText;
+        private System.Windows.Forms.Button BackBTN;
     }
 }
