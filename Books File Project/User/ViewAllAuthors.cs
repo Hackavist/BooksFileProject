@@ -138,6 +138,7 @@ namespace Books_File_Project.User
             UserWelcome uw = new UserWelcome();
             uw.Show();
             this.Hide();
+            this.Close();
         }
     }
 }

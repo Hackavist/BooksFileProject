@@ -58,6 +58,7 @@ namespace Books_File_Project
                             AdminControls ad = new AdminControls();
                             ad.Show();
                             this.Hide();
+                            this.Close();
 
                         }
                         else if (username == un && password != pass)

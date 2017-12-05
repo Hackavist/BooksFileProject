@@ -51,8 +51,6 @@ namespace Books_File_Project.User
             {
                 while (sr.Peek() != -1 && find == false)
                 {
-
-
                     record = sr.ReadLine().Split('#');
 
                     for (int i = 0; i < record.Length - 1; i++)
@@ -61,9 +59,6 @@ namespace Books_File_Project.User
                         field = record[i].Split('@');
 
                         b = new Book(field[0], field[1], field[2], field[3]);
-
-
-
 
                         if (year == field[2])
                         {
@@ -78,6 +73,7 @@ namespace Books_File_Project.User
                     }
                 }
             }
+
             sr.Close();
             fs.Close();
 
@@ -97,6 +93,7 @@ namespace Books_File_Project.User
             UserWelcome uw = new UserWelcome();
             uw.Show();
             this.Hide();
+            this.Close();
         }
     }
 }

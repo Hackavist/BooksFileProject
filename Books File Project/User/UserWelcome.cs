@@ -50,11 +50,6 @@ namespace Books_File_Project.User
             this.Close();
         }
 
-        private void UserWelcome_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void pictureBox1_Click(object sender, EventArgs e)
         {
 

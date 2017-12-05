@@ -19,7 +19,7 @@ namespace Books_File_Project.User
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void Search_Click(object sender, EventArgs e)
         {
 
             FileStream fs = new FileStream("Authors.txt", FileMode.Open);
@@ -99,7 +99,7 @@ namespace Books_File_Project.User
                         label2.Text = "Serial Number";
                         label3.Text = "Book Name";
                         label4.Text = "Publish Year";
-                        label5.Text = "Author ID"; 
+                        label5.Text = "Author ID";
                         x.Add(b);
                         found2 = true;
                     }
@@ -124,9 +124,12 @@ namespace Books_File_Project.User
             }
         }
 
-        private void label3_Click(object sender, EventArgs e)
+        private void Back_Click(object sender, EventArgs e)
         {
-
+            UserWelcome uw = new UserWelcome();
+            uw.Show();
+            this.Hide();
+            this.Close();
         }
     }
 }
