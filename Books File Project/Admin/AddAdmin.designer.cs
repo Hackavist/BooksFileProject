@@ -35,6 +35,8 @@
             this.passwardtextbox = new System.Windows.Forms.TextBox();
             this.Add = new System.Windows.Forms.Button();
             this.Back = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -111,11 +113,24 @@
             this.Back.UseVisualStyleBackColor = true;
             this.Back.Click += new System.EventHandler(this.Back_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.SystemColors.Control;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pictureBox1.Image = global::Books_File_Project.Properties.Resources.two_arrows;
+            this.pictureBox1.Location = new System.Drawing.Point(21, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(53, 48);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 7;
+            this.pictureBox1.TabStop = false;
+            // 
             // AddAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(539, 380);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.Back);
             this.Controls.Add(this.Add);
             this.Controls.Add(this.passwardtextbox);
@@ -126,6 +141,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "AddAdmin";
             this.Text = "AddAdmin";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -140,5 +156,6 @@
         private System.Windows.Forms.TextBox passwardtextbox;
         private System.Windows.Forms.Button Add;
         private System.Windows.Forms.Button Back;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
