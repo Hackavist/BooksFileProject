@@ -39,9 +39,10 @@
             // 
             // VIewAllBooks
             // 
-            this.VIewAllBooks.Location = new System.Drawing.Point(296, 55);
+            this.VIewAllBooks.Location = new System.Drawing.Point(333, 65);
+            this.VIewAllBooks.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.VIewAllBooks.Name = "VIewAllBooks";
-            this.VIewAllBooks.Size = new System.Drawing.Size(101, 67);
+            this.VIewAllBooks.Size = new System.Drawing.Size(114, 80);
             this.VIewAllBooks.TabIndex = 0;
             this.VIewAllBooks.Text = "View All Books";
             this.VIewAllBooks.UseVisualStyleBackColor = true;
@@ -49,9 +50,10 @@
             // 
             // ViewAllAuthors
             // 
-            this.ViewAllAuthors.Location = new System.Drawing.Point(296, 155);
+            this.ViewAllAuthors.Location = new System.Drawing.Point(333, 184);
+            this.ViewAllAuthors.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.ViewAllAuthors.Name = "ViewAllAuthors";
-            this.ViewAllAuthors.Size = new System.Drawing.Size(101, 67);
+            this.ViewAllAuthors.Size = new System.Drawing.Size(114, 80);
             this.ViewAllAuthors.TabIndex = 1;
             this.ViewAllAuthors.Text = "View All Authors";
             this.ViewAllAuthors.UseVisualStyleBackColor = true;
@@ -59,9 +61,10 @@
             // 
             // ViewBooksInYear
             // 
-            this.ViewBooksInYear.Location = new System.Drawing.Point(296, 284);
+            this.ViewBooksInYear.Location = new System.Drawing.Point(333, 337);
+            this.ViewBooksInYear.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.ViewBooksInYear.Name = "ViewBooksInYear";
-            this.ViewBooksInYear.Size = new System.Drawing.Size(101, 67);
+            this.ViewBooksInYear.Size = new System.Drawing.Size(114, 80);
             this.ViewBooksInYear.TabIndex = 2;
             this.ViewBooksInYear.Text = "View Books In  A soecific Year ";
             this.ViewBooksInYear.UseVisualStyleBackColor = true;
@@ -70,22 +73,23 @@
             // AdminSign
             // 
             this.AdminSign.AutoSize = true;
-            this.AdminSign.Location = new System.Drawing.Point(535, 30);
+            this.AdminSign.Location = new System.Drawing.Point(602, 36);
             this.AdminSign.Name = "AdminSign";
-            this.AdminSign.Size = new System.Drawing.Size(145, 17);
+            this.AdminSign.Size = new System.Drawing.Size(167, 19);
             this.AdminSign.TabIndex = 3;
             this.AdminSign.Text = "Sign In as an Admin ?";
             this.AdminSign.Click += new System.EventHandler(this.AdminSign_Click);
             // 
             // UserWelcome
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(692, 436);
+            this.ClientSize = new System.Drawing.Size(859, 577);
             this.Controls.Add(this.AdminSign);
             this.Controls.Add(this.ViewBooksInYear);
             this.Controls.Add(this.ViewAllAuthors);
             this.Controls.Add(this.VIewAllBooks);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "UserWelcome";
             this.Text = "UserWelcome";
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
