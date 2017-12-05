@@ -23,13 +23,15 @@ namespace Books_File_Project.User
             ViewAllBooks vb = new ViewAllBooks();
             vb.Show();
             this.Hide();
+            this.Close();
         }
 
         private void ViewAllAuthors_Click(object sender, EventArgs e)
         {
-            ViewAllBooks va = new ViewAllBooks();
+            User.ViewAllAuthors va = new ViewAllAuthors();
             va.Show();
             this.Hide();
+            this.Close();
         }
 
         private void ViewBooksInYear_Click(object sender, EventArgs e)
@@ -37,6 +39,7 @@ namespace Books_File_Project.User
             User.ViewBooksInSpecificYear vby = new ViewBooksInSpecificYear();
             vby.Show();
             this.Hide();
+            this.Close();
         }
 
         private void AdminSign_Click(object sender, EventArgs e)
@@ -44,6 +47,29 @@ namespace Books_File_Project.User
             AdminLogIn ad = new AdminLogIn();
             ad.Show();
             this.Hide();
+            this.Close();
+        }
+
+        private void UserWelcome_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+            ViewAllBooks vb = new ViewAllBooks();
+            vb.Show();
+            this.Hide();
+            this.Close();
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            User.ViewAllAuthors va = new ViewAllAuthors();
+            va.Show();
+            this.Hide();
+            this.Close();
         }
     }
 }

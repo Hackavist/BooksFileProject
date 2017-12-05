@@ -166,9 +166,14 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Admin\Admin.txt" />
+    <None Include="Resources\user-name.png" />
+    <None Include="Resources\books.png" />
+    <None Include="Resources\calendar %281%29.png" />
+    <None Include="Resources\calendar %282%29.png" />
+    <None Include="Resources\if_Untitled-6_596992.png" />
+    <None Include="Resources\shakespeare.png" />
+    <None Include="Resources\two-arrows.png" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Resources\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
