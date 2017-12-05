@@ -70,3 +70,5 @@ E:\mo7sen\Books File Project\obj\Debug\Books File Project.csproj.GenerateResourc
 E:\mo7sen\Books File Project\obj\Debug\Books File Project.exe
 E:\mo7sen\Books File Project\obj\Debug\Books File Project.pdb
 E:\mo7sen\Books File Project\obj\Debug\Books File Project.csprojResolveAssemblyReference.cache
+D:\Work\Books File Project\Books File Project\obj\Debug\Books_File_Project.User.UserWelcome.resources
+D:\Work\Books File Project\Books File Project\obj\Debug\Books_File_Project.User.ViewBooksOfSpecificAuthor.resources
