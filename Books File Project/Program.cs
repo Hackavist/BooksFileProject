@@ -1,4 +1,5 @@
-﻿using Books_File_Project.Admin;
+
+using Books_File_Project.Admin;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,7 +18,9 @@ namespace Books_File_Project
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new ViewBooksOfSpecificAuthor());
+            UserWelcome use = new UserWelcome();
+            use.Show();
+            Application.Run();
         }
     }
 }

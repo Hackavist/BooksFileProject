@@ -28,15 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ViewAllAuthors));
             this.colorDialog1 = new System.Windows.Forms.ColorDialog();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.Author_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Author_Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Author_Email = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SortById = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.SortByName = new System.Windows.Forms.Button();
+            this.SortByEmail = new System.Windows.Forms.Button();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -48,11 +51,12 @@
             this.Author_ID,
             this.Author_Name,
             this.Author_Email});
-            this.dataGridView1.Location = new System.Drawing.Point(12, 12);
+            this.dataGridView1.Location = new System.Drawing.Point(14, 14);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1228, 327);
+            this.dataGridView1.Size = new System.Drawing.Size(1382, 388);
             this.dataGridView1.TabIndex = 1;
             // 
             // Author_ID
@@ -79,47 +83,65 @@
             // 
             // SortById
             // 
-            this.SortById.Location = new System.Drawing.Point(50, 401);
+            this.SortById.Location = new System.Drawing.Point(137, 476);
+            this.SortById.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.SortById.Name = "SortById";
-            this.SortById.Size = new System.Drawing.Size(260, 60);
+            this.SortById.Size = new System.Drawing.Size(292, 71);
             this.SortById.TabIndex = 2;
             this.SortById.Text = "Show Authors Sorted by ID";
             this.SortById.UseVisualStyleBackColor = true;
             this.SortById.Click += new System.EventHandler(this.SortById_Click);
             // 
-            // button2
+            // SortByName
             // 
-            this.button2.Location = new System.Drawing.Point(467, 401);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(260, 60);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "Show Authors Sorted by Name";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.SortByName.Location = new System.Drawing.Point(606, 476);
+            this.SortByName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.SortByName.Name = "SortByName";
+            this.SortByName.Size = new System.Drawing.Size(292, 71);
+            this.SortByName.TabIndex = 3;
+            this.SortByName.Text = "Show Authors Sorted by Name";
+            this.SortByName.UseVisualStyleBackColor = true;
+            this.SortByName.Click += new System.EventHandler(this.SortByName_Click);
             // 
-            // button3
+            // SortByEmail
             // 
-            this.button3.Location = new System.Drawing.Point(884, 401);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(260, 60);
-            this.button3.TabIndex = 4;
-            this.button3.Text = "Show Authors Sorted by Email";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.SortByEmail.Location = new System.Drawing.Point(1076, 476);
+            this.SortByEmail.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.SortByEmail.Name = "SortByEmail";
+            this.SortByEmail.Size = new System.Drawing.Size(292, 71);
+            this.SortByEmail.TabIndex = 4;
+            this.SortByEmail.Text = "Show Authors Sorted by Email";
+            this.SortByEmail.UseVisualStyleBackColor = true;
+            this.SortByEmail.Click += new System.EventHandler(this.SortByEmail_Click);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(25, 506);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(50, 50);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 8;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // ViewAllAuthors
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1252, 491);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.ClientSize = new System.Drawing.Size(1408, 583);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.SortByEmail);
+            this.Controls.Add(this.SortByName);
             this.Controls.Add(this.SortById);
             this.Controls.Add(this.dataGridView1);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "ViewAllAuthors";
             this.Text = "ViewAllAuthors";
             this.Load += new System.EventHandler(this.ViewAllAuthors_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -132,7 +154,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Author_Name;
         private System.Windows.Forms.DataGridViewTextBoxColumn Author_Email;
         private System.Windows.Forms.Button SortById;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button SortByName;
+        private System.Windows.Forms.Button SortByEmail;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }
