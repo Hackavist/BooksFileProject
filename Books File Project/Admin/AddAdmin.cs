@@ -46,6 +46,7 @@ namespace Books_File_Project.Admin
             AdminControls ad = new AdminControls();
             ad.Show();
             this.Hide();
+            this.Close();
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)

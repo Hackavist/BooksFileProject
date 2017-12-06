@@ -23,6 +23,7 @@ namespace Books_File_Project.Admin
             }
             else
             {
+                MessageBox.Show("The Book is being Added ");
                 //writes the book using '@' dilimter only if the auther id is valid 
                 sw.Write(SerialNumber.Text);
                 sw.Write('@');
@@ -37,10 +38,10 @@ namespace Books_File_Project.Admin
                 MessageBox.Show("The Books has been Added Sucssefully ");
 
                 //resets the text boxes 
-                SerialNumber.Text = "";
-                BookName.Text     = "";
-                PublishYear.Text  = "";
-                AuthorId.Text     = "";
+                SerialNumber.Clear();
+                BookName.Clear();
+                PublishYear.Clear();
+                AuthorId.Clear();
             }
 
             sw.Close();
@@ -52,6 +53,7 @@ namespace Books_File_Project.Admin
             AdminControls ad = new AdminControls();
             ad.Show();
             this.Hide();
+            this.Close();
         }
     }
 }

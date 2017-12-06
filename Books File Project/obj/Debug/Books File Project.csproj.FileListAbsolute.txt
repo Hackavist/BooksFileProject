@@ -70,21 +70,5 @@ E:\mo7sen\Books File Project\obj\Debug\Books File Project.csproj.GenerateResourc
 E:\mo7sen\Books File Project\obj\Debug\Books File Project.exe
 E:\mo7sen\Books File Project\obj\Debug\Books File Project.pdb
 E:\mo7sen\Books File Project\obj\Debug\Books File Project.csprojResolveAssemblyReference.cache
-C:\Users\lenovo\Source\Repos\BooksFileProject\Books File Project\bin\Debug\Books File Project.exe.config
-C:\Users\lenovo\Source\Repos\BooksFileProject\Books File Project\bin\Debug\Books File Project.exe
-C:\Users\lenovo\Source\Repos\BooksFileProject\Books File Project\bin\Debug\Books File Project.pdb
-C:\Users\lenovo\Source\Repos\BooksFileProject\Books File Project\obj\Debug\Books File Project.csprojResolveAssemblyReference.cache
-C:\Users\lenovo\Source\Repos\BooksFileProject\Books File Project\obj\Debug\Books_File_Project.Admin.AddAdmin.resources
-C:\Users\lenovo\Source\Repos\BooksFileProject\Books File Project\obj\Debug\Books_File_Project.Admin.AddAuthor.resources
-C:\Users\lenovo\Source\Repos\BooksFileProject\Books File Project\obj\Debug\Books_File_Project.Admin.AddBook.resources
-C:\Users\lenovo\Source\Repos\BooksFileProject\Books File Project\obj\Debug\Books_File_Project.Admin.AdminControls.resources
-C:\Users\lenovo\Source\Repos\BooksFileProject\Books File Project\obj\Debug\Books_File_Project.AdminLogIn.resources
-C:\Users\lenovo\Source\Repos\BooksFileProject\Books File Project\obj\Debug\Books_File_Project.Admin.RemoveAdmin.resources
-C:\Users\lenovo\Source\Repos\BooksFileProject\Books File Project\obj\Debug\Books_File_Project.Properties.Resources.resources
-C:\Users\lenovo\Source\Repos\BooksFileProject\Books File Project\obj\Debug\Books_File_Project.User.UserWelcome.resources
-C:\Users\lenovo\Source\Repos\BooksFileProject\Books File Project\obj\Debug\Books_File_Project.User.ViewAllAuthors.resources
-C:\Users\lenovo\Source\Repos\BooksFileProject\Books File Project\obj\Debug\Books_File_Project.User.ViewAllBooks.resources
-C:\Users\lenovo\Source\Repos\BooksFileProject\Books File Project\obj\Debug\Books_File_Project.User.ViewBooksInSpecificYear.resources
-C:\Users\lenovo\Source\Repos\BooksFileProject\Books File Project\obj\Debug\Books File Project.csproj.GenerateResource.Cache
-C:\Users\lenovo\Source\Repos\BooksFileProject\Books File Project\obj\Debug\Books File Project.exe
-C:\Users\lenovo\Source\Repos\BooksFileProject\Books File Project\obj\Debug\Books File Project.pdb
+D:\Work\Books File Project\Books File Project\obj\Debug\Books_File_Project.User.UserWelcome.resources
+D:\Work\Books File Project\Books File Project\obj\Debug\Books_File_Project.User.ViewBooksOfSpecificAuthor.resources

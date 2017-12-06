@@ -32,6 +32,7 @@
             this.AddAuther = new System.Windows.Forms.Button();
             this.AddAdmin = new System.Windows.Forms.Button();
             this.RemoveAdmin = new System.Windows.Forms.Button();
+            this.SignOut = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // AddBook
@@ -74,11 +75,22 @@
             this.RemoveAdmin.UseVisualStyleBackColor = true;
             this.RemoveAdmin.Click += new System.EventHandler(this.RemoveAdmin_Click);
             // 
+            // SignOut
+            // 
+            this.SignOut.Location = new System.Drawing.Point(12, 28);
+            this.SignOut.Name = "SignOut";
+            this.SignOut.Size = new System.Drawing.Size(107, 37);
+            this.SignOut.TabIndex = 4;
+            this.SignOut.Text = "Sign Out";
+            this.SignOut.UseVisualStyleBackColor = true;
+            this.SignOut.Click += new System.EventHandler(this.SignOut_Click);
+            // 
             // AdminControls
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(708, 422);
+            this.Controls.Add(this.SignOut);
             this.Controls.Add(this.RemoveAdmin);
             this.Controls.Add(this.AddAdmin);
             this.Controls.Add(this.AddAuther);
@@ -95,5 +107,6 @@
         private System.Windows.Forms.Button AddAuther;
         private System.Windows.Forms.Button AddAdmin;
         private System.Windows.Forms.Button RemoveAdmin;
+        private System.Windows.Forms.Button SignOut;
     }
 }

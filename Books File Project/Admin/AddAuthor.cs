@@ -50,6 +50,7 @@ namespace Books_File_Project.Admin
             AdminControls ad = new AdminControls();
             ad.Show();
             this.Hide();
+            this.Close();
         }
     }
 }

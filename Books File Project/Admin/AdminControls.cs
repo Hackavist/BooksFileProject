@@ -41,5 +41,13 @@ namespace Books_File_Project.Admin
             re.Show();
             this.Hide();
         }
+
+        private void SignOut_Click(object sender, EventArgs e)
+        {
+            User.UserWelcome uw = new User.UserWelcome();
+            uw.Show();
+            this.Hide();
+            this.Close();
+        }
     }
 }
