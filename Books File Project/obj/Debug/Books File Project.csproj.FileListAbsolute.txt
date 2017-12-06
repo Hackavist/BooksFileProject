@@ -56,3 +56,4 @@ C:\Users\Zeina\Source\Repos\BooksFileProject2\Books File Project\obj\Debug\Books
 C:\Users\Zeina\Source\Repos\BooksFileProject2\Books File Project\obj\Debug\Books_File_Project.User.ViewAllBooks.resources
 C:\Users\Zeina\Source\Repos\BooksFileProject2\Books File Project\obj\Debug\Books_File_Project.User.ViewBooksInSpecificYear.resources
 C:\Users\Zeina\Source\Repos\BooksFileProject2\Books File Project\obj\Debug\Books_File_Project.User.ViewBooksOfSpecificAuthor.resources
+C:\Users\Zeina\Source\Repos\BooksFileProject2\Books File Project\obj\Debug\Books_File_Project.Resources.Resources.resources

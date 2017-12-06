@@ -91,8 +91,14 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources\AssemblyInfo.cs" />
+    <Compile Include="Resources\Resources.Designer.cs" />
+    <Compile Include="Resources\Settings.Designer.cs" />
     <Compile Include="User\ViewAllAuthors.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -135,6 +141,18 @@
     <EmbeddedResource Include="Admin\RemoveAdmin.resx">
       <DependentUpon>RemoveAdmin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="obj\Debug\Books_File_Project.Admin.AddAdmin.resources" />
+    <EmbeddedResource Include="obj\Debug\Books_File_Project.Admin.AddAuthor.resources" />
+    <EmbeddedResource Include="obj\Debug\Books_File_Project.Admin.AddBook.resources" />
+    <EmbeddedResource Include="obj\Debug\Books_File_Project.Admin.AdminControls.resources" />
+    <EmbeddedResource Include="obj\Debug\Books_File_Project.Admin.RemoveAdmin.resources" />
+    <EmbeddedResource Include="obj\Debug\Books_File_Project.AdminLogIn.resources" />
+    <EmbeddedResource Include="obj\Debug\Books_File_Project.Properties.Resources.resources" />
+    <EmbeddedResource Include="obj\Debug\Books_File_Project.User.UserWelcome.resources" />
+    <EmbeddedResource Include="obj\Debug\Books_File_Project.User.ViewAllAuthors.resources" />
+    <EmbeddedResource Include="obj\Debug\Books_File_Project.User.ViewAllBooks.resources" />
+    <EmbeddedResource Include="obj\Debug\Books_File_Project.User.ViewBooksInSpecificYear.resources" />
+    <EmbeddedResource Include="obj\Debug\Books_File_Project.User.ViewBooksOfSpecificAuthor.resources" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -145,6 +163,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Resources\Resources.resx" />
     <EmbeddedResource Include="User\ViewAllAuthors.resx">
       <DependentUpon>ViewAllAuthors.cs</DependentUpon>
     </EmbeddedResource>
@@ -160,6 +179,15 @@
     <None Include="bin\Books File Project.exe.config" />
     <None Include="bin\Books File Project.vshost.exe.config" />
     <None Include="bin\Books File Project.vshost.exe.manifest" />
+    <None Include="bin\Debug\Books File Project.exe.config" />
+    <None Include="bin\Debug\Books File Project.vshost.exe.config" />
+    <None Include="bin\Debug\Books File Project.vshost.exe.manifest" />
+    <None Include="obj\Debug\Books File Project.csproj.CoreCompileInputs.cache" />
+    <None Include="obj\Debug\Books File Project.csproj.GenerateResource.Cache" />
+    <None Include="obj\Debug\Books File Project.csprojResolveAssemblyReference.cache" />
+    <None Include="obj\Debug\CoreCompileInputs.cache" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -169,6 +197,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="Resources\Settings.settings" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -181,6 +210,16 @@
     <Content Include="bin\Books File Project.pdb" />
     <Content Include="bin\Books File Project.vshost.exe" />
     <Content Include="bin\Books.txt" />
+    <Content Include="bin\Debug\Admin.txt" />
+    <Content Include="bin\Debug\Authors.txt" />
+    <Content Include="bin\Debug\Books File Project.exe" />
+    <Content Include="bin\Debug\Books File Project.pdb" />
+    <Content Include="bin\Debug\Books File Project.vshost.exe" />
+    <Content Include="bin\Debug\Books.txt" />
+    <Content Include="obj\Debug\Books File Project.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\Books File Project.exe" />
+    <Content Include="obj\Debug\Books File Project.pdb" />
+    <Content Include="obj\Debug\TempPE\Properties.Resources.Designer.cs.dll" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
