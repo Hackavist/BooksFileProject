@@ -78,5 +78,10 @@ namespace Books_File_Project
                 fs.Close();
             }
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
