@@ -147,5 +147,12 @@ namespace Books_File_Project.User
             uw.Show();
             this.Hide();
         }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            UserWelcome uw = new UserWelcome();
+            uw.Show();
+            this.Hide();
+        }
     }
 }

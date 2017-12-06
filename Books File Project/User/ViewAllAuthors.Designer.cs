@@ -37,10 +37,9 @@
             this.SortById = new System.Windows.Forms.Button();
             this.SortByName = new System.Windows.Forms.Button();
             this.SortByEmail = new System.Windows.Forms.Button();
-            this.Back = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -115,35 +114,24 @@
             this.SortByEmail.UseVisualStyleBackColor = true;
             this.SortByEmail.Click += new System.EventHandler(this.SortByEmail_Click);
             // 
-            // Back
+            // pictureBox2
             // 
-            this.Back.Location = new System.Drawing.Point(14, 426);
-            this.Back.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.Back.Name = "Back";
-            this.Back.Size = new System.Drawing.Size(73, 37);
-            this.Back.TabIndex = 5;
-            this.Back.Text = "Back";
-            this.Back.UseVisualStyleBackColor = true;
-            this.Back.Click += new System.EventHandler(this.Back_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(14, 495);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(60, 60);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 6;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(25, 506);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(50, 50);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 8;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // ViewAllAuthors
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(1408, 583);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.Back);
+            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.SortByEmail);
             this.Controls.Add(this.SortByName);
             this.Controls.Add(this.SortById);
@@ -153,7 +141,7 @@
             this.Text = "ViewAllAuthors";
             this.Load += new System.EventHandler(this.ViewAllAuthors_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -168,7 +156,6 @@
         private System.Windows.Forms.Button SortById;
         private System.Windows.Forms.Button SortByName;
         private System.Windows.Forms.Button SortByEmail;
-        private System.Windows.Forms.Button Back;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }

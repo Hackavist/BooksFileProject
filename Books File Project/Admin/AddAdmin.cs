@@ -56,7 +56,15 @@ namespace Books_File_Project.Admin
             this.Hide();
         }
 
-        private void pictureBox2_Click(object sender, EventArgs e)
+        private void pictureBox1_Click_1(object sender, EventArgs e)
+        {
+            AdminControls ad = new AdminControls();
+            ad.Show();
+            this.Hide();
+            this.Close();
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
         {
             FileStream fs = new FileStream("Admin.txt", FileMode.Append);
             StreamWriter sw = new StreamWriter(fs);
