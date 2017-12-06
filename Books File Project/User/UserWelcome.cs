@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Books_File_Project.User;
+using Books_File_Project.Properties;
 
 namespace Books_File_Project.User
 {
@@ -60,6 +61,41 @@ namespace Books_File_Project.User
             ad.Show();
             this.Hide();
             //this.Close();
+        }
+
+        private void books_MouseHover(object sender, EventArgs e)
+        {
+            books.Image = Resources.Capture;
+
+        }
+
+        private void UserWelcome_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void shakes_MouseHover(object sender, EventArgs e)
+        {
+            shakes.Visible = false;
+            viewallauthors.Visible = true;
+        }
+
+        private void calender_MouseHover(object sender, EventArgs e)
+        {
+            calender.Visible = false;
+            viewbooksinaspecificyear.Visible = true;
+        }
+
+        private void name_MouseHover(object sender, EventArgs e)
+        {
+            viewallbooks.Visible = true;
+        }
+
+        
+
+        private void books_MouseLeave_1(object sender, EventArgs e)
+        {
+            books.Image = Resources.books;
         }
     }
 }
