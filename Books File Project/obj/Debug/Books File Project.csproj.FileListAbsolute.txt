@@ -50,3 +50,9 @@ E:\mo7sen\Books File Project\obj\Debug\Books_File_Project.User.ViewAllAuthors.re
 E:\mo7sen\Books File Project\obj\Debug\Books_File_Project.User.ViewAllBooks.resources
 E:\mo7sen\Books File Project\obj\Debug\Books_File_Project.User.ViewBooksInSpecificYear.resources
 E:\mo7sen\Books File Project\obj\Debug\Books File Project.csproj.GenerateResource.Cache
+C:\Users\Zeina\Source\Repos\BooksFileProject2\Books File Project\obj\Debug\Books_File_Project.Admin.AddAdmin.resources
+C:\Users\Zeina\Source\Repos\BooksFileProject2\Books File Project\obj\Debug\Books_File_Project.Admin.AddBook.resources
+C:\Users\Zeina\Source\Repos\BooksFileProject2\Books File Project\obj\Debug\Books_File_Project.Admin.RemoveAdmin.resources
+C:\Users\Zeina\Source\Repos\BooksFileProject2\Books File Project\obj\Debug\Books_File_Project.User.ViewAllBooks.resources
+C:\Users\Zeina\Source\Repos\BooksFileProject2\Books File Project\obj\Debug\Books_File_Project.User.ViewBooksInSpecificYear.resources
+C:\Users\Zeina\Source\Repos\BooksFileProject2\Books File Project\obj\Debug\Books_File_Project.User.ViewBooksOfSpecificAuthor.resources

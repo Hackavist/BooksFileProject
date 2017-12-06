@@ -111,6 +111,12 @@
     <Compile Include="User\ViewBooksInSpecificYear.Designer.cs">
       <DependentUpon>ViewBooksInSpecificYear.cs</DependentUpon>
     </Compile>
+    <Compile Include="User\ViewBooksOfSpecificAuthor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User\ViewBooksOfSpecificAuthor.Designer.cs">
+      <DependentUpon>ViewBooksOfSpecificAuthor.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Admin\AddAdmin.resx">
       <DependentUpon>AddAdmin.cs</DependentUpon>
     </EmbeddedResource>
@@ -148,6 +154,12 @@
     <EmbeddedResource Include="User\ViewBooksInSpecificYear.resx">
       <DependentUpon>ViewBooksInSpecificYear.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="User\ViewBooksOfSpecificAuthor.resx">
+      <DependentUpon>ViewBooksOfSpecificAuthor.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="bin\Books File Project.exe.config" />
+    <None Include="bin\Books File Project.vshost.exe.config" />
+    <None Include="bin\Books File Project.vshost.exe.manifest" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -163,6 +175,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Admin\Admin.txt" />
+    <Content Include="bin\Admin.txt" />
+    <Content Include="bin\Authors.txt" />
+    <Content Include="bin\Books File Project.exe" />
+    <Content Include="bin\Books File Project.pdb" />
+    <Content Include="bin\Books File Project.vshost.exe" />
+    <Content Include="bin\Books.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
