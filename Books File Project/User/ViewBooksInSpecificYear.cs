@@ -19,19 +19,14 @@ namespace Books_File_Project.User
             InitializeComponent();
         }
 
-
-
-
-
-
         private void EnterButton_Click(object sender, EventArgs e)
         {
-            
+
             label2.Text = "Serial Number";
             label3.Text = "Book Name";
             label4.Text = "Publish Year";
             label5.Text = "Author ID";
-            
+
             FileStream fs = new FileStream("Books.txt", FileMode.Open);
             StreamReader sr = new StreamReader(fs);
 
@@ -83,23 +78,25 @@ namespace Books_File_Project.User
                     }
                 }
             }
-                sr.Close();
-                fs.Close();
+            sr.Close();
+            fs.Close();
 
-                for (int i = 0; i < x.Count; i++)
-                {
-                    label6.Text += x[i].SerialNumber + '\n';
-                    label7.Text += x[i].BookName + '\n';
-                    label8.Text += x[i].PublishYear + '\n';
-                    label9.Text += x[i].AuthorId + '\n';
-                }
-                YearTextBox.Text = "";
-            
+            for (int i = 0; i < x.Count; i++)
+            {
+                label6.Text += x[i].SerialNumber + '\n';
+                label7.Text += x[i].BookName + '\n';
+                label8.Text += x[i].PublishYear + '\n';
+                label9.Text += x[i].AuthorId + '\n';
+            }
+            YearTextBox.Text = "";
+
         }
 
-        private void ViewBooksInSpecificYear_Load(object sender, EventArgs e)
+        private void Back_Click(object sender, EventArgs e)
         {
-
+            UserWelcome uw = new UserWelcome();
+            uw.Show();
+            this.Hide();
         }
     }
 }

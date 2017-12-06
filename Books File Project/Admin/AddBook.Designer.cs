@@ -37,103 +37,108 @@
             this.PublishYear = new System.Windows.Forms.TextBox();
             this.AuthorId = new System.Windows.Forms.TextBox();
             this.AddBookBtn = new System.Windows.Forms.Button();
+            this.backbtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Book_Name
             // 
             this.Book_Name.AutoSize = true;
             this.Book_Name.Font = new System.Drawing.Font("Goudy Old Style", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Book_Name.Location = new System.Drawing.Point(29, 122);
+            this.Book_Name.Location = new System.Drawing.Point(29, 139);
             this.Book_Name.Name = "Book_Name";
             this.Book_Name.Size = new System.Drawing.Size(183, 39);
             this.Book_Name.TabIndex = 0;
             this.Book_Name.Text = "Book Name";
-           
             // 
             // Serial_Number
             // 
             this.Serial_Number.AutoSize = true;
             this.Serial_Number.Font = new System.Drawing.Font("Goudy Old Style", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Serial_Number.Location = new System.Drawing.Point(29, 200);
+            this.Serial_Number.Location = new System.Drawing.Point(29, 217);
             this.Serial_Number.Name = "Serial_Number";
             this.Serial_Number.Size = new System.Drawing.Size(220, 39);
             this.Serial_Number.TabIndex = 1;
             this.Serial_Number.Text = "Serial Number";
-            
             // 
             // Publish_Year
             // 
             this.Publish_Year.AutoSize = true;
             this.Publish_Year.Font = new System.Drawing.Font("Goudy Old Style", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Publish_Year.Location = new System.Drawing.Point(29, 278);
+            this.Publish_Year.Location = new System.Drawing.Point(29, 295);
             this.Publish_Year.Name = "Publish_Year";
             this.Publish_Year.Size = new System.Drawing.Size(194, 39);
             this.Publish_Year.TabIndex = 2;
             this.Publish_Year.Text = "Publish Year";
-           
             // 
             // Author_Id
             // 
             this.Author_Id.AutoSize = true;
             this.Author_Id.Font = new System.Drawing.Font("Goudy Old Style", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Author_Id.Location = new System.Drawing.Point(29, 356);
+            this.Author_Id.Location = new System.Drawing.Point(29, 373);
             this.Author_Id.Name = "Author_Id";
             this.Author_Id.Size = new System.Drawing.Size(158, 39);
             this.Author_Id.TabIndex = 3;
             this.Author_Id.Text = "Author Id";
-            
             // 
             // BookName
             // 
             this.BookName.Font = new System.Drawing.Font("Goudy Old Style", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BookName.Location = new System.Drawing.Point(346, 116);
+            this.BookName.Location = new System.Drawing.Point(346, 133);
             this.BookName.Name = "BookName";
             this.BookName.Size = new System.Drawing.Size(323, 48);
             this.BookName.TabIndex = 4;
-
             // 
             // SerialNumber
             // 
             this.SerialNumber.Font = new System.Drawing.Font("Goudy Old Style", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SerialNumber.Location = new System.Drawing.Point(346, 194);
+            this.SerialNumber.Location = new System.Drawing.Point(346, 211);
             this.SerialNumber.Name = "SerialNumber";
             this.SerialNumber.Size = new System.Drawing.Size(323, 48);
             this.SerialNumber.TabIndex = 5;
-
             // 
             // PublishYear
             // 
             this.PublishYear.Font = new System.Drawing.Font("Goudy Old Style", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PublishYear.Location = new System.Drawing.Point(346, 272);
+            this.PublishYear.Location = new System.Drawing.Point(346, 289);
             this.PublishYear.Name = "PublishYear";
             this.PublishYear.Size = new System.Drawing.Size(323, 48);
             this.PublishYear.TabIndex = 6;
-
             // 
             // AuthorId
             // 
             this.AuthorId.Font = new System.Drawing.Font("Goudy Old Style", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AuthorId.Location = new System.Drawing.Point(346, 350);
+            this.AuthorId.Location = new System.Drawing.Point(346, 367);
             this.AuthorId.Name = "AuthorId";
             this.AuthorId.Size = new System.Drawing.Size(323, 48);
             this.AuthorId.TabIndex = 7;
-
             // 
             // AddBookBtn
             // 
-            this.AddBookBtn.Location = new System.Drawing.Point(237, 445);
+            this.AddBookBtn.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.AddBookBtn.Location = new System.Drawing.Point(214, 507);
             this.AddBookBtn.Name = "AddBookBtn";
-            this.AddBookBtn.Size = new System.Drawing.Size(157, 55);
+            this.AddBookBtn.Size = new System.Drawing.Size(250, 56);
             this.AddBookBtn.TabIndex = 8;
             this.AddBookBtn.Text = "Add Book";
             this.AddBookBtn.UseVisualStyleBackColor = true;
             this.AddBookBtn.Click += new System.EventHandler(this.AddBookBtn_Click);
+            // 
+            // backbtn
+            // 
+            this.backbtn.Location = new System.Drawing.Point(36, 35);
+            this.backbtn.Name = "backbtn";
+            this.backbtn.Size = new System.Drawing.Size(111, 43);
+            this.backbtn.TabIndex = 9;
+            this.backbtn.Text = "Admin Controls";
+            this.backbtn.UseVisualStyleBackColor = true;
+            this.backbtn.Click += new System.EventHandler(this.backbtn_Click);
             // 
             // AddBook
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(712, 628);
+            this.Controls.Add(this.backbtn);
             this.Controls.Add(this.AddBookBtn);
             this.Controls.Add(this.AuthorId);
             this.Controls.Add(this.PublishYear);
@@ -161,5 +166,6 @@
         private System.Windows.Forms.TextBox PublishYear;
         private System.Windows.Forms.TextBox AuthorId;
         private System.Windows.Forms.Button AddBookBtn;
+        private System.Windows.Forms.Button backbtn;
     }
 }
