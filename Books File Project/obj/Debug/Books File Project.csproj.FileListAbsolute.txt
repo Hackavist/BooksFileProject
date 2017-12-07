@@ -91,3 +91,10 @@ C:\Users\lenovo\Source\Repos\BooksFileProject\Books File Project\obj\Debug\Books
 C:\Users\lenovo\Source\Repos\BooksFileProject\Books File Project\obj\Debug\Books File Project.csproj.GenerateResource.Cache
 C:\Users\lenovo\Source\Repos\BooksFileProject\Books File Project\obj\Debug\Books File Project.exe
 C:\Users\lenovo\Source\Repos\BooksFileProject\Books File Project\obj\Debug\Books File Project.pdb
+C:\Users\Zeina\Source\Repos\BooksFileProject2\Books File Project\obj\Debug\Books_File_Project.Admin.AddAdmin.resources
+C:\Users\Zeina\Source\Repos\BooksFileProject2\Books File Project\obj\Debug\Books_File_Project.Admin.AddBook.resources
+C:\Users\Zeina\Source\Repos\BooksFileProject2\Books File Project\obj\Debug\Books_File_Project.Admin.RemoveAdmin.resources
+C:\Users\Zeina\Source\Repos\BooksFileProject2\Books File Project\obj\Debug\Books_File_Project.User.UserWelcome.resources
+C:\Users\Zeina\Source\Repos\BooksFileProject2\Books File Project\obj\Debug\Books_File_Project.User.ViewAllBooks.resources
+C:\Users\Zeina\Source\Repos\BooksFileProject2\Books File Project\obj\Debug\Books_File_Project.User.ViewBooksInSpecificYear.resources
+C:\Users\Zeina\Source\Repos\BooksFileProject2\Books File Project\obj\Debug\Books_File_Project.User.ViewBooksOfSpecificAuthor.resources
