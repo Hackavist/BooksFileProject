@@ -175,6 +175,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Admin\Admin.txt" />
+    <Content Include="Resources\admin-with-cogwheels.png" />
+    <None Include="Resources\Capture.PNG" />
+    <None Include="Resources\admin-with-cogwheels1.png" />
+    <Content Include="Resources\back-left-arrow-outline-symbol-in-black-circular-button.png" />
     <None Include="Resources\user-name.png" />
     <None Include="Resources\books.png" />
     <None Include="Resources\calendar %281%29.png" />

@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
 using Books_File_Project.Admin;
+using Books_File_Project.User;
 
 namespace Books_File_Project
 {
@@ -80,10 +81,39 @@ namespace Books_File_Project
             }
         }
 
-        private void Back_Click(object sender, EventArgs e)
+        private void label1_Click(object sender, EventArgs e)
         {
-            User.UserWelcome uw = new User.UserWelcome();
-            uw.Show();
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            UserWelcome ad = new UserWelcome();
+            ad.Show();
+            this.Hide();
+            this.Close();
+           
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox2_MouseHover(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+            UserWelcome ad = new UserWelcome();
+            ad.Show();
             this.Hide();
             this.Close();
         }

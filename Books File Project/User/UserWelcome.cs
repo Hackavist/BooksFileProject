@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Books_File_Project.User;
+using Books_File_Project.Properties;
 
 namespace Books_File_Project.User
 {
@@ -18,15 +19,17 @@ namespace Books_File_Project.User
             InitializeComponent();
         }
 
-        private void VIewAllBooks_Click(object sender, EventArgs e)
+
+        private void name_Click(object sender, EventArgs e)
         {
-            ViewAllBooks vb = new ViewAllBooks();
-            vb.Show();
+            User.ViewBooksOfSpecificAuthor v = new ViewBooksOfSpecificAuthor();
+            v.Show();
             this.Hide();
             this.Close();
+
         }
 
-        private void ViewAllAuthors_Click(object sender, EventArgs e)
+        private void shakes_Click(object sender, EventArgs e)
         {
             User.ViewAllAuthors va = new ViewAllAuthors();
             va.Show();
@@ -34,7 +37,16 @@ namespace Books_File_Project.User
             this.Close();
         }
 
-        private void ViewBooksInYear_Click(object sender, EventArgs e)
+        private void books_Click(object sender, EventArgs e)
+        {
+
+            ViewAllBooks vb = new ViewAllBooks();
+            vb.Show();
+            this.Hide();
+            this.Close();
+        }
+
+        private void calendar_Click(object sender, EventArgs e)
         {
             User.ViewBooksInSpecificYear vby = new ViewBooksInSpecificYear();
             vby.Show();
@@ -42,29 +54,48 @@ namespace Books_File_Project.User
             this.Close();
         }
 
-        private void AdminSign_Click(object sender, EventArgs e)
+        private void admin_Click(object sender, EventArgs e)
         {
+
             AdminLogIn ad = new AdminLogIn();
             ad.Show();
             this.Hide();
             this.Close();
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
+        private void books_MouseHover(object sender, EventArgs e)
         {
+            books.Image = Resources.Capture;
 
-            ViewAllBooks vb = new ViewAllBooks();
-            vb.Show();
-            this.Hide();
-            this.Close();
         }
 
-        private void pictureBox2_Click(object sender, EventArgs e)
+        private void UserWelcome_Load(object sender, EventArgs e)
         {
-            User.ViewAllAuthors va = new ViewAllAuthors();
-            va.Show();
-            this.Hide();
-            this.Close();
+
+        }
+
+        private void shakes_MouseHover(object sender, EventArgs e)
+        {
+            shakes.Visible = false;
+            viewallauthors.Visible = true;
+        }
+
+        private void calender_MouseHover(object sender, EventArgs e)
+        {
+            calender.Visible = false;
+            viewbooksinaspecificyear.Visible = true;
+        }
+
+        private void name_MouseHover(object sender, EventArgs e)
+        {
+            viewallbooks.Visible = true;
+        }
+
+        
+
+        private void books_MouseLeave_1(object sender, EventArgs e)
+        {
+            books.Image = Resources.books;
         }
     }
 }
