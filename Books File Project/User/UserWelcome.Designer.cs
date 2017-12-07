@@ -52,9 +52,9 @@
             // 
             this.admin.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.admin.Image = global::Books_File_Project.Properties.Resources.admin_with_cogwheels;
-            this.admin.Location = new System.Drawing.Point(833, 34);
+            this.admin.Location = new System.Drawing.Point(740, 29);
             this.admin.Name = "admin";
-            this.admin.Size = new System.Drawing.Size(50, 50);
+            this.admin.Size = new System.Drawing.Size(44, 42);
             this.admin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.admin.TabIndex = 9;
             this.admin.TabStop = false;
@@ -64,9 +64,9 @@
             // 
             this.name.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.name.Image = ((System.Drawing.Image)(resources.GetObject("name.Image")));
-            this.name.Location = new System.Drawing.Point(497, 346);
+            this.name.Location = new System.Drawing.Point(442, 291);
             this.name.Name = "name";
-            this.name.Size = new System.Drawing.Size(200, 200);
+            this.name.Size = new System.Drawing.Size(178, 168);
             this.name.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.name.TabIndex = 8;
             this.name.TabStop = false;
@@ -77,9 +77,9 @@
             // 
             this.calender.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.calender.Image = global::Books_File_Project.Properties.Resources.calendar__2_;
-            this.calender.Location = new System.Drawing.Point(228, 346);
+            this.calender.Location = new System.Drawing.Point(203, 291);
             this.calender.Name = "calender";
-            this.calender.Size = new System.Drawing.Size(200, 200);
+            this.calender.Size = new System.Drawing.Size(178, 168);
             this.calender.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.calender.TabIndex = 6;
             this.calender.TabStop = false;
@@ -90,9 +90,9 @@
             // 
             this.shakes.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.shakes.Image = ((System.Drawing.Image)(resources.GetObject("shakes.Image")));
-            this.shakes.Location = new System.Drawing.Point(497, 103);
+            this.shakes.Location = new System.Drawing.Point(442, 87);
             this.shakes.Name = "shakes";
-            this.shakes.Size = new System.Drawing.Size(200, 200);
+            this.shakes.Size = new System.Drawing.Size(178, 168);
             this.shakes.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.shakes.TabIndex = 5;
             this.shakes.TabStop = false;
@@ -103,9 +103,9 @@
             // 
             this.books.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.books.Image = global::Books_File_Project.Properties.Resources.books;
-            this.books.Location = new System.Drawing.Point(228, 103);
+            this.books.Location = new System.Drawing.Point(203, 87);
             this.books.Name = "books";
-            this.books.Size = new System.Drawing.Size(200, 200);
+            this.books.Size = new System.Drawing.Size(178, 168);
             this.books.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.books.TabIndex = 4;
             this.books.TabStop = false;
@@ -119,11 +119,11 @@
             this.viewbooksinaspecificyear.BackColor = System.Drawing.Color.MediumSeaGreen;
             this.viewbooksinaspecificyear.Font = new System.Drawing.Font("Times New Roman", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.viewbooksinaspecificyear.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.viewbooksinaspecificyear.Location = new System.Drawing.Point(230, 346);
-            this.viewbooksinaspecificyear.MaximumSize = new System.Drawing.Size(200, 200);
-            this.viewbooksinaspecificyear.MinimumSize = new System.Drawing.Size(200, 200);
+            this.viewbooksinaspecificyear.Location = new System.Drawing.Point(204, 291);
+            this.viewbooksinaspecificyear.MaximumSize = new System.Drawing.Size(178, 168);
+            this.viewbooksinaspecificyear.MinimumSize = new System.Drawing.Size(178, 168);
             this.viewbooksinaspecificyear.Name = "viewbooksinaspecificyear";
-            this.viewbooksinaspecificyear.Size = new System.Drawing.Size(200, 200);
+            this.viewbooksinaspecificyear.Size = new System.Drawing.Size(178, 168);
             this.viewbooksinaspecificyear.TabIndex = 15;
             this.viewbooksinaspecificyear.Text = "View Books In A Specific Year";
             this.viewbooksinaspecificyear.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -135,11 +135,11 @@
             this.viewbooksbyaspecificauthor.BackColor = System.Drawing.Color.MediumSeaGreen;
             this.viewbooksbyaspecificauthor.Font = new System.Drawing.Font("Times New Roman", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.viewbooksbyaspecificauthor.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.viewbooksbyaspecificauthor.Location = new System.Drawing.Point(499, 346);
-            this.viewbooksbyaspecificauthor.MaximumSize = new System.Drawing.Size(200, 200);
-            this.viewbooksbyaspecificauthor.MinimumSize = new System.Drawing.Size(200, 200);
+            this.viewbooksbyaspecificauthor.Location = new System.Drawing.Point(441, 291);
+            this.viewbooksbyaspecificauthor.MaximumSize = new System.Drawing.Size(178, 168);
+            this.viewbooksbyaspecificauthor.MinimumSize = new System.Drawing.Size(178, 168);
             this.viewbooksbyaspecificauthor.Name = "viewbooksbyaspecificauthor";
-            this.viewbooksbyaspecificauthor.Size = new System.Drawing.Size(200, 200);
+            this.viewbooksbyaspecificauthor.Size = new System.Drawing.Size(178, 168);
             this.viewbooksbyaspecificauthor.TabIndex = 16;
             this.viewbooksbyaspecificauthor.Text = "View Books By A Specific Author";
             this.viewbooksbyaspecificauthor.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -151,11 +151,11 @@
             this.viewallauthors.BackColor = System.Drawing.Color.MediumSeaGreen;
             this.viewallauthors.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.viewallauthors.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.viewallauthors.Location = new System.Drawing.Point(497, 103);
-            this.viewallauthors.MaximumSize = new System.Drawing.Size(200, 200);
-            this.viewallauthors.MinimumSize = new System.Drawing.Size(200, 200);
+            this.viewallauthors.Location = new System.Drawing.Point(442, 87);
+            this.viewallauthors.MaximumSize = new System.Drawing.Size(178, 168);
+            this.viewallauthors.MinimumSize = new System.Drawing.Size(178, 168);
             this.viewallauthors.Name = "viewallauthors";
-            this.viewallauthors.Size = new System.Drawing.Size(200, 200);
+            this.viewallauthors.Size = new System.Drawing.Size(178, 168);
             this.viewallauthors.TabIndex = 17;
             this.viewallauthors.Text = "View All Authors";
             this.viewallauthors.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -167,11 +167,11 @@
             this.viewallbooks.BackColor = System.Drawing.Color.MediumSeaGreen;
             this.viewallbooks.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.viewallbooks.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.viewallbooks.Location = new System.Drawing.Point(159, 103);
-            this.viewallbooks.MaximumSize = new System.Drawing.Size(200, 200);
-            this.viewallbooks.MinimumSize = new System.Drawing.Size(200, 200);
+            this.viewallbooks.Location = new System.Drawing.Point(204, 87);
+            this.viewallbooks.MaximumSize = new System.Drawing.Size(178, 168);
+            this.viewallbooks.MinimumSize = new System.Drawing.Size(178, 168);
             this.viewallbooks.Name = "viewallbooks";
-            this.viewallbooks.Size = new System.Drawing.Size(200, 200);
+            this.viewallbooks.Size = new System.Drawing.Size(178, 168);
             this.viewallbooks.TabIndex = 14;
             this.viewallbooks.Text = "View All Books";
             this.viewallbooks.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -180,11 +180,11 @@
             // 
             // UserWelcome
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(925, 619);
+            this.ClientSize = new System.Drawing.Size(822, 521);
             this.Controls.Add(this.viewallauthors);
             this.Controls.Add(this.viewbooksbyaspecificauthor);
             this.Controls.Add(this.viewbooksinaspecificyear);
@@ -194,7 +194,6 @@
             this.Controls.Add(this.calender);
             this.Controls.Add(this.shakes);
             this.Controls.Add(this.books);
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "UserWelcome";
             this.Text = "UserWelcome";
             this.Load += new System.EventHandler(this.UserWelcome_Load);

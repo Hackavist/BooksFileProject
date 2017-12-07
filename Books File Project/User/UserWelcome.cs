@@ -60,7 +60,7 @@ namespace Books_File_Project.User
             AdminLogIn ad = new AdminLogIn();
             ad.Show();
             this.Hide();
-            //this.Close();
+            this.Close();
         }
 
         private void books_MouseHover(object sender, EventArgs e)

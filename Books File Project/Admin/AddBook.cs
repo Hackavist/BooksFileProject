@@ -13,39 +13,48 @@ namespace Books_File_Project.Admin
 
         private void AddBookBtn_Click(object sender, EventArgs e)
         {
-            FileStream File = new FileStream("Books.txt", FileMode.Append, FileAccess.Write);
-            StreamWriter sw = new StreamWriter(File);
-
-
-            if (AuthorId.Text.Length > 5)
+            if (string.IsNullOrEmpty(SerialNumber.Text) || string.IsNullOrEmpty(BookName.Text) || string.IsNullOrEmpty(PublishYear.Text) || string.IsNullOrEmpty(AuthorId.Text) || string.IsNullOrWhiteSpace(SerialNumber.Text) || string.IsNullOrWhiteSpace(Book_Name.Text) || string.IsNullOrWhiteSpace(PublishYear.Text) || string.IsNullOrWhiteSpace(AuthorId.Text))
             {
-                MessageBox.Show("Author Id Must Not Exceed 5 Characters ! ");
+                MessageBox.Show("PLease Complete the Data! ");
             }
             else
             {
-                MessageBox.Show("The Book is being Added ");
-                //writes the book using '@' dilimter only if the auther id is valid 
-                sw.Write(SerialNumber.Text);
-                sw.Write('@');
-                sw.Write(BookName.Text);
-                sw.Write('@');
-                sw.Write(PublishYear.Text);
-                sw.Write('@');
-                sw.Write(AuthorId.Text);
-                sw.Write('#');
 
-                // Confirms the addition to the user 
-                MessageBox.Show("The Books has been Added Sucssefully ");
+                FileStream File = new FileStream("Books.txt", FileMode.Append, FileAccess.Write);
+                StreamWriter sw = new StreamWriter(File);
 
-                //resets the text boxes 
-                SerialNumber.Clear();
-                BookName.Clear();
-                PublishYear.Clear();
-                AuthorId.Clear();
+
+                if (AuthorId.Text.Length > 5)
+                {
+                    MessageBox.Show("Author Id Must Not Exceed 5 Characters ! ");
+                }
+                else
+                {
+                    MessageBox.Show("The Book is being Added ");
+                    //writes the book using '@' dilimter only if the auther id is valid 
+                    sw.Write(SerialNumber.Text);
+                    sw.Write('@');
+                    sw.Write(BookName.Text);
+                    sw.Write('@');
+                    sw.Write(PublishYear.Text);
+                    sw.Write('@');
+                    sw.Write(AuthorId.Text);
+                    sw.Write('#');
+
+                    // Confirms the addition to the user 
+                    MessageBox.Show("The Books has been Added Sucssefully ");
+
+                    //resets the text boxes 
+                    SerialNumber.Clear();
+                    BookName.Clear();
+                    PublishYear.Clear();
+                    AuthorId.Clear();
+                }
+
+                sw.Close();
+                File.Close();
             }
 
-            sw.Close();
-            File.Close();
         }
 
         private void backbtn_Click(object sender, EventArgs e)
