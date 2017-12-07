@@ -47,7 +47,7 @@ namespace Books_File_Project.User
             AdminLogIn ad = new AdminLogIn();
             ad.Show();
             this.Hide();
-            //this.Close();
+            this.Close();
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
