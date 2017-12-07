@@ -28,7 +28,7 @@ namespace Books_File_Project.Admin
 
             if (username.Length <= 0 || passward.Length <= 0)
             {
-                MessageBox.Show("Please enter the required data");
+                MessageBox.Show("Please enter the required data.");
             }
 
             string All = username + "@" + passward + "#";
@@ -38,7 +38,7 @@ namespace Books_File_Project.Admin
             sw.Close();
             fs.Close();
 
-            MessageBox.Show("The Author is added");
+            MessageBox.Show("Author added");
         }
 
         private void Back_Click(object sender, EventArgs e)
@@ -74,7 +74,7 @@ namespace Books_File_Project.Admin
 
             if (username.Length <= 0 || passward.Length <= 0)
             {
-                MessageBox.Show("Please enter the required data");
+                MessageBox.Show("Please enter the required data.");
             }
 
             string All = username + "@" + passward + "#";
@@ -84,7 +84,12 @@ namespace Books_File_Project.Admin
             sw.Close();
             fs.Close();
 
-            MessageBox.Show("The Author is added");
+            MessageBox.Show("Admin added.");
+        }
+
+        private void AddAdmin_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -23,11 +23,11 @@ namespace Books_File_Project.Admin
             string username = UsernameTextBox.Text;
             if (username.Length == 0)
             {
-                MessageBox.Show("Please enter the Username!!");
+                MessageBox.Show("Please enter the username.");
             }
             else if (areyousure.Checked == false)
             {
-                MessageBox.Show("mark the checkbox to remove the admin");
+                MessageBox.Show("Mark the checkbox to remove the admin.");
             }
             else
             {
@@ -64,7 +64,7 @@ namespace Books_File_Project.Admin
                 }
                 sw.Close();
                 f.Close();
-                MessageBox.Show("We are Done!!");
+                MessageBox.Show("We are done.");
 
             }
         }
@@ -89,11 +89,11 @@ namespace Books_File_Project.Admin
             string username = UsernameTextBox.Text;
             if (username.Length == 0)
             {
-                MessageBox.Show("Please enter the Username!!");
+                MessageBox.Show("Please enter the username.");
             }
             else if (areyousure.Checked == false)
             {
-                MessageBox.Show("mark the checkbox to remove the admin");
+                MessageBox.Show("Mark the checkbox to remove the admin.");
             }
             else
             {
@@ -130,7 +130,7 @@ namespace Books_File_Project.Admin
                 }
                 sw.Close();
                 f.Close();
-                MessageBox.Show("We are Done!!");
+                MessageBox.Show("We are done.");
 
             }
         }
@@ -152,11 +152,11 @@ namespace Books_File_Project.Admin
             string username = UsernameTextBox.Text;
             if (username.Length == 0)
             {
-                MessageBox.Show("Please enter the Username!!");
+                MessageBox.Show("Please enter the username.");
             }
             else if (areyousure.Checked == false)
             {
-                MessageBox.Show("mark the checkbox to remove the admin");
+                MessageBox.Show("Mark the checkbox to remove the admin.");
             }
             else
             {
@@ -193,11 +193,16 @@ namespace Books_File_Project.Admin
                 }
                 sw.Close();
                 f.Close();
-                MessageBox.Show("We are Done!!");
+                MessageBox.Show("Admin removed.");
             }
         }
 
         private void RemoveAdmin_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void UsernameTextBox_TextChanged(object sender, EventArgs e)
         {
 
         }
