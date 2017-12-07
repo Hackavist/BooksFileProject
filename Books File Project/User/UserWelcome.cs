@@ -69,11 +69,6 @@ namespace Books_File_Project.User
 
         }
 
-        private void UserWelcome_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void shakes_MouseHover(object sender, EventArgs e)
         {
             shakes.Visible = false;
@@ -96,6 +91,15 @@ namespace Books_File_Project.User
         private void books_MouseLeave_1(object sender, EventArgs e)
         {
             books.Image = Resources.books;
+        }
+
+        private void viewallauthors_Click(object sender, EventArgs e)
+        {
+            ViewAllAuthors va = new ViewAllAuthors();
+            va.Show();
+            this.Hide();
+            this.Close();
+  
         }
     }
 }
