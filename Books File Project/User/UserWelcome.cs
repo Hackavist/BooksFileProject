@@ -60,17 +60,12 @@ namespace Books_File_Project.User
             AdminLogIn ad = new AdminLogIn();
             ad.Show();
             this.Hide();
-            //this.Close();
+            this.Close();
         }
 
         private void books_MouseHover(object sender, EventArgs e)
         {
             books.Image = Resources.Capture;
-
-        }
-
-        private void UserWelcome_Load(object sender, EventArgs e)
-        {
 
         }
 
@@ -96,6 +91,15 @@ namespace Books_File_Project.User
         private void books_MouseLeave_1(object sender, EventArgs e)
         {
             books.Image = Resources.books;
+        }
+
+        private void viewallauthors_Click(object sender, EventArgs e)
+        {
+            ViewAllAuthors va = new ViewAllAuthors();
+            va.Show();
+            this.Hide();
+            this.Close();
+  
         }
     }
 }
