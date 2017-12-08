@@ -63,9 +63,19 @@ namespace Books_File_Project.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap admin_with_cogwheels {
+        internal static System.Drawing.Bitmap admin_with_cogwheels_after {
             get {
-                object obj = ResourceManager.GetObject("admin-with-cogwheels", resourceCulture);
+                object obj = ResourceManager.GetObject("admin_with_cogwheels_after", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap admin_with_cogwheels_before {
+            get {
+                object obj = ResourceManager.GetObject("admin_with_cogwheels_before", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -96,16 +106,6 @@ namespace Books_File_Project.Properties {
         internal static System.Drawing.Bitmap calendar__2_ {
             get {
                 object obj = ResourceManager.GetObject("calendar__2_", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Capture {
-            get {
-                object obj = ResourceManager.GetObject("Capture", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -146,6 +146,46 @@ namespace Books_File_Project.Properties {
         internal static System.Drawing.Bitmap user_name {
             get {
                 object obj = ResourceManager.GetObject("user_name", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap view_all_authors {
+            get {
+                object obj = ResourceManager.GetObject("view_all_authors", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap view_all_books {
+            get {
+                object obj = ResourceManager.GetObject("view_all_books", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap view_books_by_specific_author {
+            get {
+                object obj = ResourceManager.GetObject("view_books_by_specific_author", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap view_books_in_a_specific_year {
+            get {
+                object obj = ResourceManager.GetObject("view_books_in_a_specific_year", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

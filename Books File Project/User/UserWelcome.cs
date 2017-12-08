@@ -19,24 +19,6 @@ namespace Books_File_Project.User
             InitializeComponent();
         }
 
-
-        private void name_Click(object sender, EventArgs e)
-        {
-            User.ViewBooksOfSpecificAuthor v = new ViewBooksOfSpecificAuthor();
-            v.Show();
-            this.Hide();
-            this.Close();
-
-        }
-
-        private void shakes_Click(object sender, EventArgs e)
-        {
-            User.ViewAllAuthors va = new ViewAllAuthors();
-            va.Show();
-            this.Hide();
-            this.Close();
-        }
-
         private void books_Click(object sender, EventArgs e)
         {
 
@@ -46,14 +28,7 @@ namespace Books_File_Project.User
             this.Close();
         }
 
-        private void calendar_Click(object sender, EventArgs e)
-        {
-            User.ViewBooksInSpecificYear vby = new ViewBooksInSpecificYear();
-            vby.Show();
-            this.Hide();
-            this.Close();
-        }
-
+        
         private void admin_Click(object sender, EventArgs e)
         {
 
@@ -65,46 +40,86 @@ namespace Books_File_Project.User
 
         private void books_MouseHover(object sender, EventArgs e)
         {
-            books.Image = Resources.Capture;
+            books.Image = Resources.view_all_books;
 
         }
-
-        private void shakes_MouseHover(object sender, EventArgs e)
-        {
-            shakes.Visible = false;
-            viewallauthors.Visible = true;
-        }
-
-        private void calender_MouseHover(object sender, EventArgs e)
-        {
-            calender.Visible = false;
-            viewbooksinaspecificyear.Visible = true;
-        }
-
-        private void name_MouseHover(object sender, EventArgs e)
-        {
-            viewallbooks.Visible = true;
-        }
-
-        
-
         private void books_MouseLeave_1(object sender, EventArgs e)
         {
             books.Image = Resources.books;
         }
 
-        private void viewallauthors_Click(object sender, EventArgs e)
+       
+
+        private void UserWelcome_Load(object sender, EventArgs e)
+        {
+            admin.Size = new Size(42, 42);
+        }
+
+        private void shakes_MouseHover(object sender, EventArgs e)
+        {
+            shakes.Image = Resources.view_all_authors;
+        }
+
+        private void shakes_MouseLeave(object sender, EventArgs e)
+        {
+            shakes.Image = Resources.shakespeare;
+        }
+
+        private void calender_MouseHover(object sender, EventArgs e)
+        {
+            calender.Image = Resources.view_books_in_a_specific_year;
+        }
+
+        private void calender_MouseLeave(object sender, EventArgs e)
+        {
+            calender.Image = Resources.calendar__2_;
+        }
+
+        private void name_MouseHover(object sender, EventArgs e)
+        {
+            name.Image = Resources.view_books_by_specific_author;
+        }
+
+        private void name_MouseLeave(object sender, EventArgs e)
+        {
+            name.Image = Resources.user_name;
+        }
+
+        private void admin_MouseHover(object sender, EventArgs e)
+        {
+            admin.Image = Resources.admin_with_cogwheels_after;
+            
+            admin.Size = new Size(50, 50);
+        }
+
+        private void admin_MouseLeave(object sender, EventArgs e)
+        {
+            admin.Image = Resources.admin_with_cogwheels_before;
+            admin.Size = new Size(42, 42);
+        }
+
+        private void shakes_Click(object sender, EventArgs e)
         {
             ViewAllAuthors va = new ViewAllAuthors();
             va.Show();
             this.Hide();
             this.Close();
-  
         }
 
-        private void UserWelcome_Load(object sender, EventArgs e)
+        private void calender_Click(object sender, EventArgs e)
         {
+            ViewBooksInSpecificYear vsy = new ViewBooksInSpecificYear();
+            vsy.Show();
+            this.Hide();
+            this.Close();
+        }
 
+        private void name_Click(object sender, EventArgs e)
+        {
+            ViewBooksOfSpecificAuthor vsa = new ViewBooksOfSpecificAuthor();
+            vsa.Show();
+            this.Hide();
+            this.Close();
         }
     }
 }
