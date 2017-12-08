@@ -139,10 +139,22 @@
   <data name="calendar__1_" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\calendar (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="admin-with-cogwheels" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\admin-with-cogwheels1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="view_all_authors" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\view all authors.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Capture" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Capture.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="view_all_books" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\view all books.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="view_books_by_specific_author" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\view books by specific author.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="view_books_in_a_specific_year" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\view books in a specific year.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="admin_with_cogwheels_after" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\admin-with-cogwheels_after.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="admin_with_cogwheels_before" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\admin-with-cogwheels_before.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

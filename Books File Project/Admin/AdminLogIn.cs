@@ -32,7 +32,7 @@ namespace Books_File_Project
 
             if (string.IsNullOrEmpty(username) || string.IsNullOrEmpty(password) || string.IsNullOrWhiteSpace(username) || string.IsNullOrWhiteSpace(password))
             {
-                MessageBox.Show("Please Enter Username And Password");
+                MessageBox.Show("Please enter username and password.");
             }
             else
             {
@@ -54,8 +54,6 @@ namespace Books_File_Project
                         {
                             find = true;
 
-                            MessageBox.Show("Successful Log In");
-
                             AdminControls ad = new AdminControls();
                             ad.Show();
                             this.Hide();
@@ -65,13 +63,13 @@ namespace Books_File_Project
                         else if (username == un && password != pass)
                         {
                             find = true;
-                            MessageBox.Show("Wrong Password");
+                            MessageBox.Show("Wrong password.");
                         }
                     }
 
                     if (find == false)
                     {
-                        MessageBox.Show("Admin Not Found");
+                        MessageBox.Show("Admin not found.");
                     }
 
                 }
@@ -116,6 +114,11 @@ namespace Books_File_Project
             ad.Show();
             this.Hide();
             this.Close();
+        }
+
+        private void AdminLogIn_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

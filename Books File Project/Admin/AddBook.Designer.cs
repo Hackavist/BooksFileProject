@@ -49,9 +49,10 @@
             this.Book_Name.AutoSize = true;
             this.Book_Name.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Book_Name.ForeColor = System.Drawing.Color.White;
-            this.Book_Name.Location = new System.Drawing.Point(78, 124);
+            this.Book_Name.Location = new System.Drawing.Point(52, 85);
+            this.Book_Name.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Book_Name.Name = "Book_Name";
-            this.Book_Name.Size = new System.Drawing.Size(127, 27);
+            this.Book_Name.Size = new System.Drawing.Size(84, 19);
             this.Book_Name.TabIndex = 0;
             this.Book_Name.Text = "Book Name";
             // 
@@ -61,9 +62,10 @@
             this.Serial_Number.AutoSize = true;
             this.Serial_Number.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Serial_Number.ForeColor = System.Drawing.Color.White;
-            this.Serial_Number.Location = new System.Drawing.Point(78, 217);
+            this.Serial_Number.Location = new System.Drawing.Point(52, 148);
+            this.Serial_Number.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Serial_Number.Name = "Serial_Number";
-            this.Serial_Number.Size = new System.Drawing.Size(150, 27);
+            this.Serial_Number.Size = new System.Drawing.Size(97, 19);
             this.Serial_Number.TabIndex = 1;
             this.Serial_Number.Text = "Serial Number";
             // 
@@ -73,9 +75,10 @@
             this.Publish_Year.AutoSize = true;
             this.Publish_Year.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Publish_Year.ForeColor = System.Drawing.Color.White;
-            this.Publish_Year.Location = new System.Drawing.Point(78, 309);
+            this.Publish_Year.Location = new System.Drawing.Point(52, 211);
+            this.Publish_Year.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Publish_Year.Name = "Publish_Year";
-            this.Publish_Year.Size = new System.Drawing.Size(133, 27);
+            this.Publish_Year.Size = new System.Drawing.Size(83, 19);
             this.Publish_Year.TabIndex = 2;
             this.Publish_Year.Text = "Publish Year";
             // 
@@ -85,58 +88,62 @@
             this.Author_Id.AutoSize = true;
             this.Author_Id.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Author_Id.ForeColor = System.Drawing.Color.White;
-            this.Author_Id.Location = new System.Drawing.Point(78, 402);
+            this.Author_Id.Location = new System.Drawing.Point(52, 275);
+            this.Author_Id.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Author_Id.Name = "Author_Id";
-            this.Author_Id.Size = new System.Drawing.Size(106, 27);
+            this.Author_Id.Size = new System.Drawing.Size(71, 19);
             this.Author_Id.TabIndex = 3;
-            this.Author_Id.Text = "Author Id";
+            this.Author_Id.Text = "Author ID";
             // 
             // BookName
             // 
             this.BookName.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.BookName.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BookName.Location = new System.Drawing.Point(390, 116);
-            this.BookName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.BookName.Location = new System.Drawing.Point(260, 79);
+            this.BookName.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.BookName.Name = "BookName";
-            this.BookName.Size = new System.Drawing.Size(265, 35);
+            this.BookName.Size = new System.Drawing.Size(178, 26);
             this.BookName.TabIndex = 4;
             // 
             // SerialNumber
             // 
             this.SerialNumber.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.SerialNumber.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SerialNumber.Location = new System.Drawing.Point(390, 209);
-            this.SerialNumber.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.SerialNumber.Location = new System.Drawing.Point(260, 143);
+            this.SerialNumber.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.SerialNumber.Name = "SerialNumber";
-            this.SerialNumber.Size = new System.Drawing.Size(265, 35);
+            this.SerialNumber.Size = new System.Drawing.Size(178, 26);
             this.SerialNumber.TabIndex = 5;
             // 
             // PublishYear
             // 
             this.PublishYear.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.PublishYear.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PublishYear.Location = new System.Drawing.Point(390, 301);
-            this.PublishYear.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.PublishYear.Location = new System.Drawing.Point(260, 206);
+            this.PublishYear.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.PublishYear.MaxLength = 4;
             this.PublishYear.Name = "PublishYear";
-            this.PublishYear.Size = new System.Drawing.Size(265, 35);
+            this.PublishYear.Size = new System.Drawing.Size(178, 26);
             this.PublishYear.TabIndex = 6;
             // 
             // AuthorId
             // 
             this.AuthorId.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.AuthorId.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AuthorId.Location = new System.Drawing.Point(390, 394);
-            this.AuthorId.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.AuthorId.Location = new System.Drawing.Point(260, 270);
+            this.AuthorId.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.AuthorId.MaxLength = 5;
             this.AuthorId.Name = "AuthorId";
-            this.AuthorId.Size = new System.Drawing.Size(265, 35);
+            this.AuthorId.Size = new System.Drawing.Size(178, 26);
             this.AuthorId.TabIndex = 7;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(21, 21);
+            this.pictureBox1.Location = new System.Drawing.Point(14, 14);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(50, 50);
+            this.pictureBox1.Size = new System.Drawing.Size(33, 34);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 10;
             this.pictureBox1.TabStop = false;
@@ -146,9 +153,10 @@
             // 
             this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(677, 541);
+            this.pictureBox2.Location = new System.Drawing.Point(451, 370);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(100, 100);
+            this.pictureBox2.Size = new System.Drawing.Size(67, 68);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 11;
             this.pictureBox2.TabStop = false;
@@ -156,10 +164,10 @@
             // 
             // AddBook
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(801, 663);
+            this.ClientSize = new System.Drawing.Size(534, 454);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.AuthorId);
@@ -170,9 +178,10 @@
             this.Controls.Add(this.Publish_Year);
             this.Controls.Add(this.Serial_Number);
             this.Controls.Add(this.Book_Name);
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.Name = "AddBook";
             this.Text = "AddBook";
+            this.Load += new System.EventHandler(this.AddBook_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);

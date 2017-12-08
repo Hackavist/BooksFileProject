@@ -75,21 +75,33 @@ namespace Books_File_Project.Admin
             string id = AuthorIDText.Text;
             string email = AuthorEmailText.Text;
 
-            char[] record = new char[50];
+            if (name == "" || id == "" || email == "")
+            {
+                MessageBox.Show("Please enter the required data.");
+            }
+            else
+            {
+                char[] record = new char[50];
 
-            id.CopyTo(0, record, 0, id.Length);
-            name.CopyTo(0, record, 5, name.Length);
-            email.CopyTo(0, record, 25, email.Length);
+                id.CopyTo(0, record, 0, id.Length);
+                name.CopyTo(0, record, 5, name.Length);
+                email.CopyTo(0, record, 25, email.Length);
 
-            sw.Write(record, 0, 50);
+                sw.Write(record, 0, 50);
 
-            sw.Close();
+                sw.Close();
 
-            AuthorNameText.Text = "";
-            AuthorIDText.Text = "";
-            AuthorEmailText.Text = "";
+                AuthorNameText.Text = "";
+                AuthorIDText.Text = "";
+                AuthorEmailText.Text = "";
 
-            MessageBox.Show("Author added.");
+                MessageBox.Show("Author added.");
+            }
+        }
+
+        private void AddAuthor_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
