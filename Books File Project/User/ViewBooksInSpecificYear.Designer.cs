@@ -63,10 +63,11 @@
             // YearTextBox
             // 
             this.YearTextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.YearTextBox.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.YearTextBox.Location = new System.Drawing.Point(218, 107);
             this.YearTextBox.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.YearTextBox.Name = "YearTextBox";
-            this.YearTextBox.Size = new System.Drawing.Size(189, 20);
+            this.YearTextBox.Size = new System.Drawing.Size(189, 26);
             this.YearTextBox.TabIndex = 1;
             // 
             // label2
