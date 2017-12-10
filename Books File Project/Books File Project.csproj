@@ -176,8 +176,14 @@
   <ItemGroup>
     <Content Include="Admin\Admin.txt" />
     <Content Include="Resources\admin-with-cogwheels.png" />
+    <None Include="Resources\view books in a specific year.PNG" />
+    <None Include="Resources\view books by specific author.PNG" />
+    <None Include="Resources\view all authors.PNG" />
+    <None Include="Resources\view all books.PNG" />
     <None Include="Resources\Capture.PNG" />
     <None Include="Resources\admin-with-cogwheels1.png" />
+    <None Include="Resources\admin-with-cogwheels_after.png" />
+    <None Include="Resources\admin-with-cogwheels_before.png" />
     <Content Include="Resources\back-left-arrow-outline-symbol-in-black-circular-button.png" />
     <None Include="Resources\user-name.png" />
     <None Include="Resources\books.png" />

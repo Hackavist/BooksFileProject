@@ -45,7 +45,7 @@ namespace Books_File_Project.User
 
             if (string.IsNullOrEmpty(YearTextBox.Text) || string.IsNullOrWhiteSpace(YearTextBox.Text) /* || mesh arkam */)
             {
-                MessageBox.Show("Please Enter Publish Year ");
+                MessageBox.Show("Please enter publish year.");
             }
             else
             {
@@ -69,7 +69,7 @@ namespace Books_File_Project.User
 
                     if (find == false)
                     {
-                        MessageBox.Show("No Books Published in " + year);
+                        MessageBox.Show("No books published in " + year);
                     }
                 }
             }
@@ -135,7 +135,7 @@ namespace Books_File_Project.User
 
             if (string.IsNullOrEmpty(YearTextBox.Text) || string.IsNullOrWhiteSpace(YearTextBox.Text) /* || mesh arkam */)
             {
-                MessageBox.Show("Please Enter Publish Year ");
+                MessageBox.Show("Please enter publish year.");
             }
             else
             {
@@ -175,6 +175,11 @@ namespace Books_File_Project.User
                 label9.Text += x[i].AuthorId + '\n';
             }
             YearTextBox.Text = "";
+
+        }
+
+        private void ViewBooksInSpecificYear_Load(object sender, EventArgs e)
+        {
 
         }
     }

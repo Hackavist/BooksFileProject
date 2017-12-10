@@ -85,5 +85,10 @@ namespace Books_File_Project.Admin
             this.Hide();
             this.Close();
         }
+
+        private void AdminControls_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

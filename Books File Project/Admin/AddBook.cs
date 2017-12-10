@@ -15,7 +15,7 @@ namespace Books_File_Project.Admin
         {
             if (string.IsNullOrEmpty(SerialNumber.Text) || string.IsNullOrEmpty(BookName.Text) || string.IsNullOrEmpty(PublishYear.Text) || string.IsNullOrEmpty(AuthorId.Text) || string.IsNullOrWhiteSpace(SerialNumber.Text) || string.IsNullOrWhiteSpace(Book_Name.Text) || string.IsNullOrWhiteSpace(PublishYear.Text) || string.IsNullOrWhiteSpace(AuthorId.Text))
             {
-                MessageBox.Show("PLease Complete the Data! ");
+                MessageBox.Show("PLease enter the required data.");
             }
             else
             {
@@ -26,11 +26,11 @@ namespace Books_File_Project.Admin
 
                 if (AuthorId.Text.Length > 5)
                 {
-                    MessageBox.Show("Author Id Must Not Exceed 5 Characters ! ");
+                    MessageBox.Show("Author ID must not exceed 5 characters.");
                 }
                 else
                 {
-                    MessageBox.Show("The Book is being Added ");
+                    MessageBox.Show("The book is being added.");
                     //writes the book using '@' dilimter only if the auther id is valid 
                     sw.Write(SerialNumber.Text);
                     sw.Write('@');
@@ -42,7 +42,7 @@ namespace Books_File_Project.Admin
                     sw.Write('#');
 
                     // Confirms the addition to the user 
-                    MessageBox.Show("The Books has been Added Sucssefully ");
+                    MessageBox.Show("Book added sucssefully.");
 
                     //resets the text boxes 
                     SerialNumber.Clear();
@@ -80,35 +80,46 @@ namespace Books_File_Project.Admin
             StreamWriter sw = new StreamWriter(File);
 
 
-            if (AuthorId.Text.Length > 5)
+            if (AuthorId.Text == "" || SerialNumber.Text == "" || PublishYear.Text == "" || BookName.Text == "")
             {
-                MessageBox.Show("Author Id Must Not Exceed 5 Characters ! ");
+                MessageBox.Show("Please enter the required data.");
             }
             else
             {
-                MessageBox.Show("The Book is being Added ");
-                //writes the book using '@' dilimter only if the auther id is valid 
-                sw.Write(SerialNumber.Text);
-                sw.Write('@');
-                sw.Write(BookName.Text);
-                sw.Write('@');
-                sw.Write(PublishYear.Text);
-                sw.Write('@');
-                sw.Write(AuthorId.Text);
-                sw.Write('#');
+                if (AuthorId.Text.Length > 5)
+                {
+                    MessageBox.Show("Author ID must not exceed 5 characters.");
+                }
+                else
+                {
+                    MessageBox.Show("The book is being added.");
+                    //writes the book using '@' dilimter only if the auther id is valid 
+                    sw.Write(SerialNumber.Text);
+                    sw.Write('@');
+                    sw.Write(BookName.Text);
+                    sw.Write('@');
+                    sw.Write(PublishYear.Text);
+                    sw.Write('@');
+                    sw.Write(AuthorId.Text);
+                    sw.Write('#');
 
-                // Confirms the addition to the user 
-                MessageBox.Show("The Books has been Added Sucssefully ");
+                    // Confirms the addition to the user 
+                    MessageBox.Show("Book added sucssefully.");
 
-                //resets the text boxes 
-                SerialNumber.Clear();
-                BookName.Clear();
-                PublishYear.Clear();
-                AuthorId.Clear();
+                    //resets the text boxes 
+                    SerialNumber.Clear();
+                    BookName.Clear();
+                    PublishYear.Clear();
+                    AuthorId.Clear();
+                }
             }
-
             sw.Close();
             File.Close();
+        }
+
+        private void AddBook_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

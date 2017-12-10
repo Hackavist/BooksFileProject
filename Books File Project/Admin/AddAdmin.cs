@@ -17,45 +17,6 @@ namespace Books_File_Project.Admin
         {
             InitializeComponent();
         }
-
-        private void Add_Click(object sender, EventArgs e)
-        {
-            FileStream fs = new FileStream("Admin.txt", FileMode.Append);
-            StreamWriter sw = new StreamWriter(fs);
-
-            string username = usernametextbox.Text;
-            string passward = passwardtextbox.Text;
-
-            if (username.Length <= 0 || passward.Length <= 0)
-            {
-                MessageBox.Show("Please enter the required data");
-            }
-
-            string All = username + "@" + passward + "#";
-
-            sw.Write(All);
-
-            sw.Close();
-            fs.Close();
-
-            MessageBox.Show("The Author is added");
-        }
-
-        private void Back_Click(object sender, EventArgs e)
-        {
-            AdminControls ad = new AdminControls();
-            ad.Show();
-            this.Hide();
-            this.Close();
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-            AdminControls ad = new AdminControls();
-            ad.Show();
-            this.Hide();
-        }
-
         private void pictureBox1_Click_1(object sender, EventArgs e)
         {
             AdminControls ad = new AdminControls();
@@ -66,25 +27,53 @@ namespace Books_File_Project.Admin
 
         private void pictureBox4_Click(object sender, EventArgs e)
         {
-            FileStream fs = new FileStream("Admin.txt", FileMode.Append);
-            StreamWriter sw = new StreamWriter(fs);
 
             string username = usernametextbox.Text;
             string passward = passwardtextbox.Text;
 
             if (username.Length <= 0 || passward.Length <= 0)
             {
-                MessageBox.Show("Please enter the required data");
+                MessageBox.Show("Please enter the required data.");
             }
+            else
+            {
 
-            string All = username + "@" + passward + "#";
+                FileStream fs = new FileStream("Admin.txt", FileMode.Open);
+                StreamReader sr = new StreamReader(fs);
+                string thefile = sr.ReadLine();
+                string [] records = thefile.Split('#');
+                for (int i = 0; i < records.Length - 1; i++)
+                {
+                    string[] fields = records[i].Split('@');
+                    if (fields[0] == username)
+                    {
+                        sr.Close();
+                        fs.Close();
+                        MessageBox.Show("This Admin name already exist!");
+                        return ;
+                    }
+                }
 
-            sw.Write(All);
+                sr.Close();
+                fs.Close();
+                fs = new FileStream("Admin.txt", FileMode.Append);
+                StreamWriter sw = new StreamWriter(fs);
 
-            sw.Close();
-            fs.Close();
+                string All = username + "@" + passward + "#";
 
-            MessageBox.Show("The Author is added");
+                sw.Write(All);
+
+                sw.Close();
+                fs.Close();
+                usernametextbox.Clear();
+                passwardtextbox.Clear();
+                MessageBox.Show("Admin added.");
+            }
+        }
+
+        private void AddAdmin_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
