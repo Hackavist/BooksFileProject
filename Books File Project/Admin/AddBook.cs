@@ -58,7 +58,7 @@ namespace Books_File_Project.Admin
                         fields = records[i].Split('@');
                         if (fields[1] == BookName.Text)
                         {
-                            b = false;
+                            b = true;
                         }
 
                     }
@@ -66,7 +66,7 @@ namespace Books_File_Project.Admin
                 }
                 sr.Close();
                 fs.Close();
-                if (b)
+                if (b==false)
                 {
                     MessageBox.Show("The book is being added.");
 
@@ -138,7 +138,7 @@ namespace Books_File_Project.Admin
 
             foreach (var item in dic)
             {
-                AutherIDs.Items.Add(dic.Keys);
+                AutherIDs.Items.Add(item.Key);
             }
         }
 
