@@ -117,6 +117,12 @@
     <Compile Include="User\ViewBooksOfSpecificAuthor.Designer.cs">
       <DependentUpon>ViewBooksOfSpecificAuthor.cs</DependentUpon>
     </Compile>
+    <Compile Include="VALB.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="VALB.Designer.cs">
+      <DependentUpon>VALB.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Admin\AddAdmin.resx">
       <DependentUpon>AddAdmin.cs</DependentUpon>
     </EmbeddedResource>
@@ -160,6 +166,9 @@
     <EmbeddedResource Include="User\ViewBooksOfSpecificAuthor.resx">
       <DependentUpon>ViewBooksOfSpecificAuthor.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="VALB.resx">
+      <DependentUpon>VALB.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -176,6 +185,8 @@
   <ItemGroup>
     <Content Include="Admin\Admin.txt" />
     <Content Include="Resources\admin-with-cogwheels.png" />
+    <Content Include="Resources\close-button.png" />
+    <None Include="Resources\close-button1.png" />
     <None Include="Resources\Capture.PNG" />
     <None Include="Resources\admin-with-cogwheels1.png" />
     <Content Include="Resources\back-left-arrow-outline-symbol-in-black-circular-button.png" />

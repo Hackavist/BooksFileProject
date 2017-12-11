@@ -40,10 +40,10 @@ namespace Books_File_Project.User
         private void books_Click(object sender, EventArgs e)
         {
 
-            ViewAllBooks vb = new ViewAllBooks();
+            ViewAllBooks vb = new ViewAllBooks(this);
             vb.Show();
             this.Hide();
-            this.Close();
+            
         }
 
         private void calendar_Click(object sender, EventArgs e)
@@ -97,8 +97,7 @@ namespace Books_File_Project.User
         {
             ViewAllAuthors va = new ViewAllAuthors();
             va.Show();
-            this.Hide();
-            this.Close();
+                        
   
         }
 
