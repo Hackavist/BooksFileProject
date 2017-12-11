@@ -1,60 +1,23 @@
 ﻿using System;
-using System.IO;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
+using Books_File_Project.Classes;
 
 namespace Books_File_Project.Admin
 {
     public partial class AddBook : Form
     {
+        public Dictionary<string, string> dic = new Dictionary<string, string>();
         public AddBook()
         {
             InitializeComponent();
-        }
-
-        private void AddBookBtn_Click(object sender, EventArgs e)
-        {
-            if (string.IsNullOrEmpty(SerialNumber.Text) || string.IsNullOrEmpty(BookName.Text) || string.IsNullOrEmpty(PublishYear.Text) || string.IsNullOrEmpty(AuthorId.Text) || string.IsNullOrWhiteSpace(SerialNumber.Text) || string.IsNullOrWhiteSpace(Book_Name.Text) || string.IsNullOrWhiteSpace(PublishYear.Text) || string.IsNullOrWhiteSpace(AuthorId.Text))
-            {
-                MessageBox.Show("PLease enter the required data.");
-            }
-            else
-            {
-
-                FileStream File = new FileStream("Books.txt", FileMode.Append, FileAccess.Write);
-                StreamWriter sw = new StreamWriter(File);
-
-
-                if (AuthorId.Text.Length > 5)
-                {
-                    MessageBox.Show("Author ID must not exceed 5 characters.");
-                }
-                else
-                {
-                    MessageBox.Show("The book is being added.");
-                    //writes the book using '@' dilimter only if the auther id is valid 
-                    sw.Write(SerialNumber.Text);
-                    sw.Write('@');
-                    sw.Write(BookName.Text);
-                    sw.Write('@');
-                    sw.Write(PublishYear.Text);
-                    sw.Write('@');
-                    sw.Write(AuthorId.Text);
-                    sw.Write('#');
-
-                    // Confirms the addition to the user 
-                    MessageBox.Show("Book added sucssefully.");
-
-                    //resets the text boxes 
-                    SerialNumber.Clear();
-                    BookName.Clear();
-                    PublishYear.Clear();
-                    AuthorId.Clear();
-                }
-
-                sw.Close();
-                File.Close();
-            }
-
         }
 
         private void backbtn_Click(object sender, EventArgs e)
@@ -75,24 +38,42 @@ namespace Books_File_Project.Admin
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-
-            FileStream File = new FileStream("Books.txt", FileMode.Append, FileAccess.Write);
-            StreamWriter sw = new StreamWriter(File);
-
-
-            if (AuthorId.Text == "" || SerialNumber.Text == "" || PublishYear.Text == "" || BookName.Text == "")
+            if (SerialNumber.Text == "" || PublishYear.Text == "" || BookName.Text == "")
             {
                 MessageBox.Show("Please enter the required data.");
             }
             else
             {
-                if (AuthorId.Text.Length > 5)
+                bool b = false;
+                FileStream fs = new FileStream("Books.txt", FileMode.Open);
+                StreamReader sr = new StreamReader(fs);
+                string[] fields;
+                string[] records;
+
+                while (sr.Peek() != -1)
                 {
-                    MessageBox.Show("Author ID must not exceed 5 characters.");
+                    records = sr.ReadLine().Split('#');
+                    for (int i = 0; i < records.Length - 1; i++)
+                    {
+                        fields = records[i].Split('@');
+                        if (fields[1] == BookName.Text)
+                        {
+                            b = false;
+                        }
+
+                    }
+
                 }
-                else
+                sr.Close();
+                fs.Close();
+                if (b)
                 {
                     MessageBox.Show("The book is being added.");
+
+                    FileStream File = new FileStream("Books.txt", FileMode.Append, FileAccess.Write);
+                    StreamWriter sw = new StreamWriter(File);
+                    // gets the string value of the combobox 
+                    string AuthorId = AutherIDs.SelectedItem.ToString();
                     //writes the book using '@' dilimter only if the auther id is valid 
                     sw.Write(SerialNumber.Text);
                     sw.Write('@');
@@ -100,8 +81,7 @@ namespace Books_File_Project.Admin
                     sw.Write('@');
                     sw.Write(PublishYear.Text);
                     sw.Write('@');
-                    sw.Write(AuthorId.Text);
-                    sw.Write('#');
+                    sw.Write(dic[AuthorId]);
 
                     // Confirms the addition to the user 
                     MessageBox.Show("Book added sucssefully.");
@@ -110,16 +90,57 @@ namespace Books_File_Project.Admin
                     SerialNumber.Clear();
                     BookName.Clear();
                     PublishYear.Clear();
-                    AuthorId.Clear();
+
+                    sw.Close();
+                    File.Close();
+                }
+                else
+                {
+                    MessageBox.Show("Book Already Exists !");
                 }
             }
-            sw.Close();
-            File.Close();
         }
 
         private void AddBook_Load(object sender, EventArgs e)
         {
+            FileStream f = new FileStream("Authors.txt", FileMode.Open);
+            StreamReader sr = new StreamReader(f);
 
+            while (sr.Peek() != -1)
+            {
+                char[] id = new char[5];
+                char[] name = new char[20];
+                char[] email = new char[25];
+                char[] togetfromfile = new char[50];
+
+                sr.Read(togetfromfile, 0, 50);
+
+                string tmp = new string(togetfromfile);
+
+                tmp.CopyTo(0, id, 0, 5);
+                tmp.CopyTo(5, name, 0, 20);
+                tmp.CopyTo(25, email, 0, 25);
+
+                string[] x = new string[3];
+
+                x[0] = new string(id);
+                x[1] = new string(name);
+                x[2] = new string(email);
+
+                AutherIDs.Items.Add(x[0] + " " + x[1]);
+                dic[x[0] + " " + x[1]] = x[0];
+
+            }
+
+            sr.Close();
+            f.Close();
+
+
+            foreach (var item in dic)
+            {
+                AutherIDs.Items.Add(dic.Keys);
+            }
         }
+
     }
 }
