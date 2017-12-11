@@ -21,8 +21,9 @@ namespace Books_File_Project.User
 
         private void books_Click(object sender, EventArgs e)
         {
+            UserWelcome UW = new UserWelcome();
 
-            ViewAllBooks vb = new ViewAllBooks();
+            ViewAllBooks vb = new ViewAllBooks(UW);
             vb.Show();
             this.Hide();
             this.Close();
