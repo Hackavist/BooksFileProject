@@ -2,7 +2,7 @@
 using System.IO;
 using System.Windows.Forms;
 using Books_File_Project.Admin;
-
+using Books_File_Project.User;
 namespace Books_File_Project.Admin
 {
     public partial class AdminControls : Form
@@ -10,6 +10,16 @@ namespace Books_File_Project.Admin
         public AdminControls()
         {
             InitializeComponent();
+            if (AdminLogIn.AdminLoggedIn != UserWelcome.GeneralManager)
+            {
+                bookadd.Size = new System.Drawing.Size(bookadd.Size.Width * 2, bookadd.Size.Height * 2);
+                bookadd.Location = new System.Drawing.Point(bookadd.Location.X, bookadd.Location.Y + 50);
+                authoradd.Size = new System.Drawing.Size(authoradd.Size.Width * 2, authoradd.Size.Height * 2);
+                authoradd.Location = new System.Drawing.Point(authoradd.Location.X, authoradd.Location.Y + 120);
+
+                adminadd.Visible = false;
+                adminremove.Visible = false;
+            }
         }
 
 

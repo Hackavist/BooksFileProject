@@ -20,6 +20,7 @@ namespace Books_File_Project
             InitializeComponent();
         }
 
+        public static string AdminLoggedIn = "";
         private void LogInButton_Click(object sender, EventArgs e)
         {
 
@@ -54,6 +55,7 @@ namespace Books_File_Project
                         {
                             find = true;
 
+                            AdminLoggedIn = username;
                             AdminControls ad = new AdminControls();
                             ad.Show();
                             this.Hide();
