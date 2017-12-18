@@ -27,7 +27,7 @@ namespace Books_File_Project.User
             label4.Text = "Publish Year";
             label5.Text = "Author ID";
 
-            FileStream fs = new FileStream("Books.txt", FileMode.Open);
+            FileStream fs = new FileStream("Books.txt", FileMode.OpenOrCreate);
             StreamReader sr = new StreamReader(fs);
 
             string year = YearTextBox.Text;
@@ -117,7 +117,7 @@ namespace Books_File_Project.User
             label4.Text = "Publish Year";
             label5.Text = "Author ID";
 
-            FileStream fs = new FileStream("Books.txt", FileMode.Open);
+            FileStream fs = new FileStream("Books.txt", FileMode.OpenOrCreate);
             StreamReader sr = new StreamReader(fs);
 
             string year = YearTextBox.Text;
