@@ -84,6 +84,7 @@
             // 
             // SortById
             // 
+            this.SortById.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.SortById.Location = new System.Drawing.Point(91, 326);
             this.SortById.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.SortById.Name = "SortById";
@@ -95,6 +96,7 @@
             // 
             // SortByName
             // 
+            this.SortByName.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.SortByName.Location = new System.Drawing.Point(404, 326);
             this.SortByName.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.SortByName.Name = "SortByName";
@@ -106,6 +108,7 @@
             // 
             // SortByEmail
             // 
+            this.SortByEmail.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.SortByEmail.Location = new System.Drawing.Point(717, 326);
             this.SortByEmail.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.SortByEmail.Name = "SortByEmail";
@@ -117,9 +120,10 @@
             // 
             // pictureBox2
             // 
+            this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(17, 346);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(33, 34);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
