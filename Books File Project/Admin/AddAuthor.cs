@@ -143,5 +143,12 @@ namespace Books_File_Project.Admin
         {
 
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            Admin.AddBook book = new Admin.AddBook();
+            book.Show();
+            this.Hide();
+        }
     }
 }

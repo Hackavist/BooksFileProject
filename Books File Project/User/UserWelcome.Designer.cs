@@ -36,6 +36,7 @@
             this.shakes = new System.Windows.Forms.PictureBox();
             this.books = new System.Windows.Forms.PictureBox();
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.admin)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.name)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.calender)).BeginInit();
@@ -48,13 +49,14 @@
             // 
             this.admin.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.admin.Image = global::Books_File_Project.Properties.Resources.admin_with_cogwheels_before;
-            this.admin.Location = new System.Drawing.Point(740, 30);
+            this.admin.Location = new System.Drawing.Point(832, 38);
             this.admin.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.admin.Name = "admin";
-            this.admin.Size = new System.Drawing.Size(42, 42);
+            this.admin.Size = new System.Drawing.Size(47, 52);
             this.admin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.admin.TabIndex = 9;
             this.admin.TabStop = false;
+            this.toolTip1.SetToolTip(this.admin, "Sign In As Admin");
             this.admin.Click += new System.EventHandler(this.admin_Click);
             this.admin.MouseLeave += new System.EventHandler(this.admin_MouseLeave);
             this.admin.MouseHover += new System.EventHandler(this.admin_MouseHover);
@@ -63,10 +65,10 @@
             // 
             this.name.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.name.Image = ((System.Drawing.Image)(resources.GetObject("name.Image")));
-            this.name.Location = new System.Drawing.Point(443, 290);
+            this.name.Location = new System.Drawing.Point(498, 362);
             this.name.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.name.Name = "name";
-            this.name.Size = new System.Drawing.Size(179, 167);
+            this.name.Size = new System.Drawing.Size(201, 209);
             this.name.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.name.TabIndex = 8;
             this.name.TabStop = false;
@@ -78,10 +80,10 @@
             // 
             this.calender.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.calender.Image = global::Books_File_Project.Properties.Resources.calendar__2_;
-            this.calender.Location = new System.Drawing.Point(203, 290);
+            this.calender.Location = new System.Drawing.Point(228, 362);
             this.calender.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.calender.Name = "calender";
-            this.calender.Size = new System.Drawing.Size(179, 167);
+            this.calender.Size = new System.Drawing.Size(201, 209);
             this.calender.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.calender.TabIndex = 6;
             this.calender.TabStop = false;
@@ -93,10 +95,10 @@
             // 
             this.shakes.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.shakes.Image = ((System.Drawing.Image)(resources.GetObject("shakes.Image")));
-            this.shakes.Location = new System.Drawing.Point(443, 87);
+            this.shakes.Location = new System.Drawing.Point(498, 109);
             this.shakes.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.shakes.Name = "shakes";
-            this.shakes.Size = new System.Drawing.Size(179, 167);
+            this.shakes.Size = new System.Drawing.Size(201, 209);
             this.shakes.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.shakes.TabIndex = 5;
             this.shakes.TabStop = false;
@@ -108,10 +110,10 @@
             // 
             this.books.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.books.Image = global::Books_File_Project.Properties.Resources.books;
-            this.books.Location = new System.Drawing.Point(203, 87);
+            this.books.Location = new System.Drawing.Point(228, 109);
             this.books.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.books.Name = "books";
-            this.books.Size = new System.Drawing.Size(179, 167);
+            this.books.Size = new System.Drawing.Size(201, 209);
             this.books.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.books.TabIndex = 4;
             this.books.TabStop = false;
@@ -121,11 +123,11 @@
             // 
             // UserWelcome
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(821, 521);
+            this.ClientSize = new System.Drawing.Size(924, 651);
             this.Controls.Add(this.admin);
             this.Controls.Add(this.name);
             this.Controls.Add(this.calender);
@@ -153,5 +155,6 @@
         private System.Windows.Forms.PictureBox calender;
         private System.Windows.Forms.PictureBox name;
         private System.Windows.Forms.PictureBox admin;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }
