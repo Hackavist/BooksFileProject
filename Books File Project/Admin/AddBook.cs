@@ -45,7 +45,7 @@ namespace Books_File_Project.Admin
             else
             {
                 bool b = false;
-                FileStream fs = new FileStream("Books.txt", FileMode.Open);
+                FileStream fs = new FileStream("Books.txt", FileMode.OpenOrCreate);
                 StreamReader sr = new StreamReader(fs);
                 string[] fields;
                 string[] records;
@@ -104,7 +104,7 @@ namespace Books_File_Project.Admin
 
         private void AddBook_Load(object sender, EventArgs e)
         {
-            FileStream f = new FileStream("Authors.txt", FileMode.Open);
+            FileStream f = new FileStream("Authors.txt", FileMode.OpenOrCreate);
             StreamReader sr = new StreamReader(f);
 
             while (sr.Peek() != -1)

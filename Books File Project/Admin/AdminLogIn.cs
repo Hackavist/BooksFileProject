@@ -37,7 +37,7 @@ namespace Books_File_Project
             }
             else
             {
-                FileStream fs = new FileStream("Admin.txt", FileMode.Open);
+                FileStream fs = new FileStream("Admin.txt", FileMode.OpenOrCreate);
                 StreamReader sr = new StreamReader(fs);
 
                 while (sr.Peek() != -1 && find == false)

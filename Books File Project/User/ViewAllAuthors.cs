@@ -36,7 +36,7 @@ namespace Books_File_Project.User
 
         private void ViewAllAuthors_Load(object sender, EventArgs e)
         {
-            FileStream f = new FileStream("Authors.txt", FileMode.Open);
+            FileStream f = new FileStream("Authors.txt", FileMode.OpenOrCreate);
             StreamReader sr = new StreamReader(f);
 
             while (sr.Peek() != -1)
