@@ -81,7 +81,7 @@ namespace Books_File_Project.Admin
             }
             else
             {
-                FileStream fss = new FileStream("Authors.txt", FileMode.Open);
+                FileStream fss = new FileStream("Authors.txt", FileMode.OpenOrCreate);
                 StreamReader sr = new StreamReader(fss);
 
                 while (sr.Peek() != -1 && exist == false)

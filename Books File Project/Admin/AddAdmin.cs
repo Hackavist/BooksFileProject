@@ -38,7 +38,7 @@ namespace Books_File_Project.Admin
             else
             {
 
-                FileStream fs = new FileStream("Admin.txt", FileMode.Open);
+                FileStream fs = new FileStream("Admin.txt", FileMode.OpenOrCreate);
                 StreamReader sr = new StreamReader(fs);
                 string thefile = sr.ReadLine();
                 string [] records = thefile.Split('#');
