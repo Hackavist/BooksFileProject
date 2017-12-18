@@ -18,7 +18,7 @@ namespace Books_File_Project
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            AddBook use = new AddBook();
+            ViewAllAuthors use = new ViewAllAuthors();
             use.Show();
             Application.Run();
         }
