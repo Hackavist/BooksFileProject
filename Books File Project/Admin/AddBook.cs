@@ -137,10 +137,10 @@ namespace Books_File_Project.Admin
             f.Close();
 
 
-            foreach (var item in dic)
+            /*foreach (var item in dic)
             {
                 AutherIDs.Items.Add(item.Key);
-            }
+            }*/
         }
 
         private void AutherIDs_SelectedIndexChanged(object sender, EventArgs e)
