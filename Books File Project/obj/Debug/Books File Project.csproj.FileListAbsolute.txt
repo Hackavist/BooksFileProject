@@ -143,7 +143,6 @@ C:\Users\hazem\Source\Repos\BooksFileProject2\Books File Project\obj\Debug\Books
 C:\Users\chantal\Source\Repos\BooksFileProject\Books File Project\bin\Debug\Books File Project.exe.config
 C:\Users\chantal\Source\Repos\BooksFileProject\Books File Project\bin\Debug\Books File Project.exe
 C:\Users\chantal\Source\Repos\BooksFileProject\Books File Project\bin\Debug\Books File Project.pdb
-C:\Users\chantal\Source\Repos\BooksFileProject\Books File Project\obj\Debug\Books File Project.csprojResolveAssemblyReference.cache
 C:\Users\chantal\Source\Repos\BooksFileProject\Books File Project\obj\Debug\Books_File_Project.Admin.AddAdmin.resources
 C:\Users\chantal\Source\Repos\BooksFileProject\Books File Project\obj\Debug\Books_File_Project.Admin.AddAuthor.resources
 C:\Users\chantal\Source\Repos\BooksFileProject\Books File Project\obj\Debug\Books_File_Project.Admin.AddBook.resources

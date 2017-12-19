@@ -146,7 +146,7 @@ namespace Books_File_Project.User
             StreamReader sr = new StreamReader(fs);
 
             string searchID = "";
-            string name = authorName.Text;
+            string name = authorName.Text.Trim('\0');
             bool found = false;
 
             label6.Text = "";
@@ -168,7 +168,7 @@ namespace Books_File_Project.User
                     sr.Read(recArr, 0, 50);
                     record = new string(recArr);
 
-                    string id = record.Substring(0, 5);
+                    string id = record.Substring(0,5);
                     string name2 = record.Substring(5, 20);
                     string email = record.Substring(25, 25);
 
@@ -184,13 +184,14 @@ namespace Books_File_Project.User
 
                     }
                 }
-                if (found == false)
-                {
-                    MessageBox.Show("Author does not exist.");
-                }
             }
             sr.Close();
             fs.Close();
+                if (found == false)
+                {
+                    MessageBox.Show("Author does not exist.");
+                return;
+                }
 
             FileStream fss = new FileStream("Books.txt", FileMode.OpenOrCreate);
             StreamReader srr = new StreamReader(fss);
@@ -224,11 +225,11 @@ namespace Books_File_Project.User
                         found2 = true;
                     }
                 }
+            }
                 if (found2 == false)
                 {
                     MessageBox.Show("Author did not publish any books.");
                 }
-            }
             srr.Close();
             fss.Close();
 

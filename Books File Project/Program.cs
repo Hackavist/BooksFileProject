@@ -18,11 +18,27 @@ namespace Books_File_Project
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            AddAuthor use = new AddAuthor();
+            UserWelcome use = new UserWelcome();
             use.Show();
             Application.Run();
+
+            
             
         }
+
+        public static bool IsNumbers(string x)
+        {
+            for(int i=0;i<x.Length;i++)
+            {
+                if(x[i] < '0' || x[i] >'9')
+                {
+                    return false;
+                }
+            }
+
+            return true;
+        }
+
         public static void trail()
         {
 
