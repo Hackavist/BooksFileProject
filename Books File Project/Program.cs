@@ -18,13 +18,11 @@ namespace Books_File_Project
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            ViewAllAuthors use = new ViewAllAuthors();
+            //ViewAllAuthors use = new ViewAllAuthors();
+            AddAdmin use = new AddAdmin();
             use.Show();
             Application.Run();
         }
-        public static void trail()
-        {
-
-        }
+      
     }
 }

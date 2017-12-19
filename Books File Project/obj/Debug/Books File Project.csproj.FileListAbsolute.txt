@@ -160,3 +160,22 @@ C:\Users\chantal\Source\Repos\BooksFileProject\Books File Project\obj\Debug\Book
 C:\Users\chantal\Source\Repos\BooksFileProject\Books File Project\obj\Debug\Books File Project.csproj.CoreCompileInputs.cache
 C:\Users\chantal\Source\Repos\BooksFileProject\Books File Project\obj\Debug\Books File Project.exe
 C:\Users\chantal\Source\Repos\BooksFileProject\Books File Project\obj\Debug\Books File Project.pdb
+E:\Files_Project_Final\Books File Project\bin\Debug\Books File Project.exe.config
+E:\Files_Project_Final\Books File Project\obj\Debug\Books File Project.exe
+E:\Files_Project_Final\Books File Project\obj\Debug\Books File Project.pdb
+E:\Files_Project_Final\Books File Project\bin\Debug\Books File Project.exe
+E:\Files_Project_Final\Books File Project\bin\Debug\Books File Project.pdb
+E:\Files_Project_Final\Books File Project\obj\Debug\Books File Project.csprojResolveAssemblyReference.cache
+E:\Files_Project_Final\Books File Project\obj\Debug\Books_File_Project.Admin.AddAdmin.resources
+E:\Files_Project_Final\Books File Project\obj\Debug\Books_File_Project.Admin.AddAuthor.resources
+E:\Files_Project_Final\Books File Project\obj\Debug\Books_File_Project.Admin.AddBook.resources
+E:\Files_Project_Final\Books File Project\obj\Debug\Books_File_Project.Admin.AdminControls.resources
+E:\Files_Project_Final\Books File Project\obj\Debug\Books_File_Project.AdminLogIn.resources
+E:\Files_Project_Final\Books File Project\obj\Debug\Books_File_Project.Admin.RemoveAdmin.resources
+E:\Files_Project_Final\Books File Project\obj\Debug\Books_File_Project.Properties.Resources.resources
+E:\Files_Project_Final\Books File Project\obj\Debug\Books_File_Project.User.UserWelcome.resources
+E:\Files_Project_Final\Books File Project\obj\Debug\Books_File_Project.User.ViewAllAuthors.resources
+E:\Files_Project_Final\Books File Project\obj\Debug\Books_File_Project.User.ViewAllBooks.resources
+E:\Files_Project_Final\Books File Project\obj\Debug\Books_File_Project.User.ViewBooksInSpecificYear.resources
+E:\Files_Project_Final\Books File Project\obj\Debug\Books_File_Project.User.ViewBooksOfSpecificAuthor.resources
+E:\Files_Project_Final\Books File Project\obj\Debug\Books File Project.csproj.GenerateResource.Cache

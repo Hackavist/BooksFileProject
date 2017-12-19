@@ -18,9 +18,9 @@ namespace Books_File_Project.User
         {
 
             InitializeComponent();
-             UW = uw;
+            UW = uw;
         }
-        
+
         List<String> s = new List<string>();
 
         private void ViewAllBooks_Load(object sender, EventArgs e)
@@ -29,13 +29,13 @@ namespace Books_File_Project.User
 
             Book bk = new Book();
 
-            FileStream fs = new FileStream("Books.txt", FileMode.OpenOrCreate);
+            FileStream fs = new FileStream("Books.txt", FileMode.Open);
             StreamReader sr = new StreamReader(fs);
             string[] fields;
             string[] records;
             int hight = 180;
-            
-            
+
+
             while (sr.Peek() != -1)
             {
                 records = sr.ReadLine().Split('#');
@@ -51,17 +51,17 @@ namespace Books_File_Project.User
 
 
 
-                  /*  label1.Text += fields[0] + '\n';
-                       label2.Text += fields[1] + '\n';
-                       label3.Text += fields[2] + '\n';
-                       label4.Text += fields[3] + '\n';*/
-               
+                    /*  label1.Text += fields[0] + '\n';
+                         label2.Text += fields[1] + '\n';
+                         label3.Text += fields[2] + '\n';
+                         label4.Text += fields[3] + '\n';*/
+
                 }
 
             }
             sr.Close();
             fs.Close();
-        
+
         }
 
         private void Back_Click(object sender, EventArgs e)
@@ -73,7 +73,7 @@ namespace Books_File_Project.User
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            
+
             this.Close();
         }
 
@@ -83,8 +83,8 @@ namespace Books_File_Project.User
             this.Close();
         }
 
-     
-      
+
+
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -98,11 +98,33 @@ namespace Books_File_Project.User
             this.Close();
         }
 
-        
+        public const int WM_NCLBUTTONDOWN = 0xA1;
+        public const int HT_CAPTION = 0x2;
+
+        [System.Runtime.InteropServices.DllImportAttribute("user32.dll")]
+        public static extern int SendMessage(IntPtr hWnd, int Msg, int wParam, int lParam);
+        [System.Runtime.InteropServices.DllImportAttribute("user32.dll")]
+        public static extern bool ReleaseCapture();
         private void pictureBox2_Click_1(object sender, EventArgs e)
         {
             UW.Show();
             this.Close();
         }
+
+
+        private void panel1_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                ReleaseCapture();
+                SendMessage(Handle, WM_NCLBUTTONDOWN, HT_CAPTION, 0);
+            }
+        }
+
+
+
+
+
+
     }
 }
