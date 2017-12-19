@@ -22,7 +22,7 @@ namespace Books_File_Project.User
         private void Search_Click(object sender, EventArgs e)
         {
 
-            FileStream fs = new FileStream("Authors.txt", FileMode.Open);
+            FileStream fs = new FileStream("Authors.txt", FileMode.OpenOrCreate);
             StreamReader sr = new StreamReader(fs);
 
             string searchID = "";
@@ -72,7 +72,7 @@ namespace Books_File_Project.User
             sr.Close();
             fs.Close();
 
-            FileStream fss = new FileStream("Books.txt", FileMode.Open);
+            FileStream fss = new FileStream("Books.txt", FileMode.OpenOrCreate);
             StreamReader srr = new StreamReader(fss);
 
             bool found2 = false;
@@ -142,7 +142,7 @@ namespace Books_File_Project.User
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-            FileStream fs = new FileStream("Authors.txt", FileMode.Open);
+            FileStream fs = new FileStream("Authors.txt", FileMode.OpenOrCreate);
             StreamReader sr = new StreamReader(fs);
 
             string searchID = "";
@@ -192,7 +192,7 @@ namespace Books_File_Project.User
             sr.Close();
             fs.Close();
 
-            FileStream fss = new FileStream("Books.txt", FileMode.Open);
+            FileStream fss = new FileStream("Books.txt", FileMode.OpenOrCreate);
             StreamReader srr = new StreamReader(fss);
 
             bool found2 = false;

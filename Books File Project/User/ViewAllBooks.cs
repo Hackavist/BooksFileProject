@@ -29,7 +29,7 @@ namespace Books_File_Project.User
 
             Book bk = new Book();
 
-            FileStream fs = new FileStream("Books.txt", FileMode.Open);
+            FileStream fs = new FileStream("Books.txt", FileMode.OpenOrCreate);
             StreamReader sr = new StreamReader(fs);
             string[] fields;
             string[] records;

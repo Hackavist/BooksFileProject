@@ -20,6 +20,7 @@ namespace Books_File_Project
             InitializeComponent();
         }
 
+        public static string AdminLoggedIn = "";
         private void LogInButton_Click(object sender, EventArgs e)
         {
 
@@ -36,7 +37,7 @@ namespace Books_File_Project
             }
             else
             {
-                FileStream fs = new FileStream("Admin.txt", FileMode.Open);
+                FileStream fs = new FileStream("Admin.txt", FileMode.OpenOrCreate);
                 StreamReader sr = new StreamReader(fs);
 
                 while (sr.Peek() != -1 && find == false)
@@ -54,6 +55,7 @@ namespace Books_File_Project
                         {
                             find = true;
 
+                            AdminLoggedIn = username;
                             AdminControls ad = new AdminControls();
                             ad.Show();
                             this.Hide();

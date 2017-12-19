@@ -81,7 +81,7 @@ namespace Books_File_Project.Admin
             }
             else
             {
-                FileStream fss = new FileStream("Authors.txt", FileMode.Open);
+                FileStream fss = new FileStream("Authors.txt", FileMode.OpenOrCreate);
                 StreamReader sr = new StreamReader(fss);
 
                 while (sr.Peek() != -1 && exist == false)
@@ -142,6 +142,13 @@ namespace Books_File_Project.Admin
         private void AddAuthor_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            Admin.AddBook book = new Admin.AddBook();
+            book.Show();
+            this.Hide();
         }
     }
 }

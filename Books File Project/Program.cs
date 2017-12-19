@@ -18,9 +18,10 @@ namespace Books_File_Project
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            UserWelcome use = new UserWelcome ();
+            AddAuthor use = new AddAuthor();
             use.Show();
             Application.Run();
+            
         }
         public static void trail()
         {

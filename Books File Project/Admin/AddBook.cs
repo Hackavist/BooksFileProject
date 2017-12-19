@@ -45,7 +45,7 @@ namespace Books_File_Project.Admin
             else
             {
                 bool b = false;
-                FileStream fs = new FileStream("Books.txt", FileMode.Open);
+                FileStream fs = new FileStream("Books.txt", FileMode.OpenOrCreate);
                 StreamReader sr = new StreamReader(fs);
                 string[] fields;
                 string[] records;
@@ -68,8 +68,6 @@ namespace Books_File_Project.Admin
                 fs.Close();
                 if (b==false)
                 {
-                    MessageBox.Show("The book is being added.");
-
                     FileStream File = new FileStream("Books.txt", FileMode.Append, FileAccess.Write);
                     StreamWriter sw = new StreamWriter(File);
                     // gets the string value of the combobox 
@@ -83,27 +81,30 @@ namespace Books_File_Project.Admin
                     sw.Write('@');
                     sw.Write(dic[AuthorId]);
 
-                    // Confirms the addition to the user 
-                    MessageBox.Show("Book added sucssefully.");
 
                     //resets the text boxes 
                     SerialNumber.Clear();
                     BookName.Clear();
                     PublishYear.Clear();
+                    AutherIDs.SelectedText = " ";
+
+                    // Confirms the addition to the user 
+                    MessageBox.Show("Book added sucssefully.");
+
 
                     sw.Close();
                     File.Close();
                 }
                 else
                 {
-                    MessageBox.Show("Book Already Exists !");
+                    MessageBox.Show("Book already exists.");
                 }
             }
         }
 
         private void AddBook_Load(object sender, EventArgs e)
         {
-            FileStream f = new FileStream("Authors.txt", FileMode.Open);
+            FileStream f = new FileStream("Authors.txt", FileMode.OpenOrCreate);
             StreamReader sr = new StreamReader(f);
 
             while (sr.Peek() != -1)
@@ -136,11 +137,22 @@ namespace Books_File_Project.Admin
             f.Close();
 
 
-            foreach (var item in dic)
-            {
-                AutherIDs.Items.Add(item.Key);
-            }
+            //foreach (var item in dic)
+            //{
+            //    AutherIDs.Items.Add(item.Key);
+            //}
         }
 
+        private void AutherIDs_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            Admin.AddAuthor auth = new AddAuthor();
+            auth.Show();
+            this.Hide();
+        }
     }
 }
