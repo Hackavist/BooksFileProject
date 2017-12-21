@@ -49,7 +49,7 @@
             // 
             this.admin.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.admin.Image = global::Books_File_Project.Properties.Resources.admin_with_cogwheels_before;
-            this.admin.Location = new System.Drawing.Point(832, 38);
+            this.admin.Location = new System.Drawing.Point(786, 38);
             this.admin.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.admin.Name = "admin";
             this.admin.Size = new System.Drawing.Size(47, 52);
@@ -65,7 +65,7 @@
             // 
             this.name.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.name.Image = ((System.Drawing.Image)(resources.GetObject("name.Image")));
-            this.name.Location = new System.Drawing.Point(498, 362);
+            this.name.Location = new System.Drawing.Point(475, 554);
             this.name.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.name.Name = "name";
             this.name.Size = new System.Drawing.Size(201, 209);
@@ -80,7 +80,7 @@
             // 
             this.calender.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.calender.Image = global::Books_File_Project.Properties.Resources.calendar__2_;
-            this.calender.Location = new System.Drawing.Point(228, 362);
+            this.calender.Location = new System.Drawing.Point(205, 554);
             this.calender.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.calender.Name = "calender";
             this.calender.Size = new System.Drawing.Size(201, 209);
@@ -95,7 +95,7 @@
             // 
             this.shakes.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.shakes.Image = ((System.Drawing.Image)(resources.GetObject("shakes.Image")));
-            this.shakes.Location = new System.Drawing.Point(498, 109);
+            this.shakes.Location = new System.Drawing.Point(475, 301);
             this.shakes.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.shakes.Name = "shakes";
             this.shakes.Size = new System.Drawing.Size(201, 209);
@@ -110,7 +110,7 @@
             // 
             this.books.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.books.Image = global::Books_File_Project.Properties.Resources.books;
-            this.books.Location = new System.Drawing.Point(228, 109);
+            this.books.Location = new System.Drawing.Point(205, 301);
             this.books.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.books.Name = "books";
             this.books.Size = new System.Drawing.Size(201, 209);
@@ -127,15 +127,19 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(924, 651);
+            this.ClientSize = new System.Drawing.Size(878, 1034);
             this.Controls.Add(this.admin);
             this.Controls.Add(this.name);
             this.Controls.Add(this.calender);
             this.Controls.Add(this.shakes);
             this.Controls.Add(this.books);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "UserWelcome";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "UserWelcome";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.UserWelcome_Load);
             ((System.ComponentModel.ISupportInitialize)(this.admin)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.name)).EndInit();

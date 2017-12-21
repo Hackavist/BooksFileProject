@@ -79,6 +79,10 @@ namespace Books_File_Project.Admin
             {
                 MessageBox.Show("Please enter the required data.");
             }
+            if(id.Length < 5 )
+            {
+                MessageBox.Show("ID must be 5 digits");
+            }
             else
             {
                 FileStream fss = new FileStream("Authors.txt", FileMode.OpenOrCreate);
