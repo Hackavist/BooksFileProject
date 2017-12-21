@@ -18,24 +18,24 @@ namespace Books_File_Project.User
         {
 
             InitializeComponent();
-             UW = uw;
+            UW = uw;
         }
-        
+
         List<String> s = new List<string>();
 
         private void ViewAllBooks_Load(object sender, EventArgs e)
         {
-            //label1.Text = "";
+           
 
             Book bk = new Book();
 
-            FileStream fs = new FileStream("Books.txt", FileMode.OpenOrCreate);
+            FileStream fs = new FileStream("Books.txt", FileMode.Open);
             StreamReader sr = new StreamReader(fs);
             string[] fields;
             string[] records;
             int hight = 180;
-            
-            
+
+
             while (sr.Peek() != -1)
             {
                 records = sr.ReadLine().Split('#');
@@ -44,65 +44,34 @@ namespace Books_File_Project.User
                     fields = records[i].Split('@');
                     VALB v = new VALB(fields[0], fields[1], fields[2], fields[3]);
 
-                    this.Controls.Add(v);
-
-                    v.Location = new Point(30, hight);
-                    hight += 60;
-
+                  
+                    flowLayoutPanel1.Controls.Add(v);
+                    v.Location = new Point(100, hight);
 
 
-                  /*  label1.Text += fields[0] + '\n';
-                       label2.Text += fields[1] + '\n';
-                       label3.Text += fields[2] + '\n';
-                       label4.Text += fields[3] + '\n';*/
-               
+            hight += 60;
+
+
+
                 }
 
             }
             sr.Close();
             fs.Close();
-        
-        }
-
-        private void Back_Click(object sender, EventArgs e)
-        {
-            UW.Show();
-            this.Close();
 
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-            
-            this.Close();
-        }
+  
 
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-            UW.Show();
-            this.Close();
-        }
-
-     
-      
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            UW.Close();
-            this.Close();
-        }
-
-        private void pictureBox1_Click_1(object sender, EventArgs e)
-        {
-            UW.Close();
-            this.Close();
-        }
-
-        
         private void pictureBox2_Click_1(object sender, EventArgs e)
         {
             UW.Show();
             this.Close();
+        }
+
+        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

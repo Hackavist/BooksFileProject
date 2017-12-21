@@ -37,7 +37,8 @@ namespace Books_File_Project.Admin
             }
             else
             {
-
+                //sanya wa7da w gy
+                //okai
                 FileStream fs = new FileStream("Admin.txt", FileMode.OpenOrCreate);
                 StreamReader sr = new StreamReader(fs);
                 string thefile = sr.ReadLine();
