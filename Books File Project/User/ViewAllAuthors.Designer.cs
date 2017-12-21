@@ -31,17 +31,17 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ViewAllAuthors));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.colorDialog1 = new System.Windows.Forms.ColorDialog();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.Author_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Author_Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Author_Email = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SortById = new System.Windows.Forms.Button();
             this.SortByName = new System.Windows.Forms.Button();
             this.SortByEmail = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.Author_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Author_Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Author_Email = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -54,9 +54,9 @@
             this.dataGridView1.AllowUserToResizeRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Lime;
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.MediumSeaGreen;
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.SkyBlue;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.ForestGreen;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
             this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
@@ -67,7 +67,7 @@
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Lime;
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.MediumSeaGreen;
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
@@ -80,9 +80,9 @@
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Lime;
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.MediumSeaGreen;
             dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.SkyBlue;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.ForestGreen;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle4;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -100,34 +100,11 @@
             this.dataGridView1.TabIndex = 1;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
-            // Author_ID
-            // 
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Lime;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.SkyBlue;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.ForestGreen;
-            this.Author_ID.DefaultCellStyle = dataGridViewCellStyle3;
-            this.Author_ID.HeaderText = "Author ID";
-            this.Author_ID.Name = "Author_ID";
-            this.Author_ID.ReadOnly = true;
-            this.Author_ID.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
-            // Author_Name
-            // 
-            this.Author_Name.HeaderText = "Author Name";
-            this.Author_Name.Name = "Author_Name";
-            this.Author_Name.ReadOnly = true;
-            // 
-            // Author_Email
-            // 
-            this.Author_Email.HeaderText = "Author Email";
-            this.Author_Email.Name = "Author_Email";
-            this.Author_Email.ReadOnly = true;
-            // 
             // SortById
             // 
             this.SortById.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.SortById.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SortById.ForeColor = System.Drawing.Color.MediumSeaGreen;
             this.SortById.Location = new System.Drawing.Point(136, 501);
             this.SortById.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.SortById.Name = "SortById";
@@ -140,6 +117,8 @@
             // SortByName
             // 
             this.SortByName.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.SortByName.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SortByName.ForeColor = System.Drawing.Color.MediumSeaGreen;
             this.SortByName.Location = new System.Drawing.Point(606, 501);
             this.SortByName.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.SortByName.Name = "SortByName";
@@ -152,6 +131,8 @@
             // SortByEmail
             // 
             this.SortByEmail.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.SortByEmail.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SortByEmail.ForeColor = System.Drawing.Color.MediumSeaGreen;
             this.SortByEmail.Location = new System.Drawing.Point(1076, 501);
             this.SortByEmail.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.SortByEmail.Name = "SortByEmail";
@@ -173,6 +154,31 @@
             this.pictureBox2.TabIndex = 8;
             this.pictureBox2.TabStop = false;
             this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            // 
+            // Author_ID
+            // 
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.MediumSeaGreen;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.SkyBlue;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White;
+            this.Author_ID.DefaultCellStyle = dataGridViewCellStyle3;
+            this.Author_ID.HeaderText = "Author ID";
+            this.Author_ID.Name = "Author_ID";
+            this.Author_ID.ReadOnly = true;
+            this.Author_ID.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // Author_Name
+            // 
+            this.Author_Name.HeaderText = "Author Name";
+            this.Author_Name.Name = "Author_Name";
+            this.Author_Name.ReadOnly = true;
+            // 
+            // Author_Email
+            // 
+            this.Author_Email.HeaderText = "Author Email";
+            this.Author_Email.Name = "Author_Email";
+            this.Author_Email.ReadOnly = true;
             // 
             // ViewAllAuthors
             // 
