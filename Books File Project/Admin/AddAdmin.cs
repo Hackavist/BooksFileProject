@@ -42,19 +42,23 @@ namespace Books_File_Project.Admin
                 FileStream fs = new FileStream("Admin.txt", FileMode.OpenOrCreate);
                 StreamReader sr = new StreamReader(fs);
                 string thefile = sr.ReadLine();
-                string [] records = thefile.Split('#');
-                for (int i = 0; i < records.Length - 1; i++)
+                if (thefile != null)
                 {
-                    string[] fields = records[i].Split('@');
-                    if (fields[0] == username)
-                    {
-                        sr.Close();
-                        fs.Close();
-                        MessageBox.Show("This Admin name already exist!");
-                        return ;
-                    }
-                }
 
+                    string[] records = thefile.Split('#');
+                    for (int i = 0; i < records.Length - 1; i++)
+                    {
+                        string[] fields = records[i].Split('@');
+                        if (fields[0] == username)
+                        {
+                            sr.Close();
+                            fs.Close();
+                            MessageBox.Show("This Admin name already exist!");
+                            return;
+                        }
+                    }
+
+                }
                 sr.Close();
                 fs.Close();
                 fs = new FileStream("Admin.txt", FileMode.Append);

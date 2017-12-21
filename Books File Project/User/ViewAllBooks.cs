@@ -25,7 +25,7 @@ namespace Books_File_Project.User
 
         private void ViewAllBooks_Load(object sender, EventArgs e)
         {
-            //label1.Text = "";
+           
 
             Book bk = new Book();
 
@@ -44,17 +44,14 @@ namespace Books_File_Project.User
                     fields = records[i].Split('@');
                     VALB v = new VALB(fields[0], fields[1], fields[2], fields[3]);
 
-                    this.Controls.Add(v);
-
-                    v.Location = new Point(30, hight);
-                    hight += 60;
-
+                  
+                    flowLayoutPanel1.Controls.Add(v);
+                    v.Location = new Point(100, hight);
 
 
-                    /*  label1.Text += fields[0] + '\n';
-                         label2.Text += fields[1] + '\n';
-                         label3.Text += fields[2] + '\n';
-                         label4.Text += fields[3] + '\n';*/
+            hight += 60;
+
+
 
                 }
 
@@ -64,67 +61,17 @@ namespace Books_File_Project.User
 
         }
 
-        private void Back_Click(object sender, EventArgs e)
-        {
-            UW.Show();
-            this.Close();
+  
 
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-            this.Close();
-        }
-
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-            UW.Show();
-            this.Close();
-        }
-
-
-
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            UW.Close();
-            this.Close();
-        }
-
-        private void pictureBox1_Click_1(object sender, EventArgs e)
-        {
-            UW.Close();
-            this.Close();
-        }
-
-        public const int WM_NCLBUTTONDOWN = 0xA1;
-        public const int HT_CAPTION = 0x2;
-
-        [System.Runtime.InteropServices.DllImportAttribute("user32.dll")]
-        public static extern int SendMessage(IntPtr hWnd, int Msg, int wParam, int lParam);
-        [System.Runtime.InteropServices.DllImportAttribute("user32.dll")]
-        public static extern bool ReleaseCapture();
         private void pictureBox2_Click_1(object sender, EventArgs e)
         {
             UW.Show();
             this.Close();
         }
 
-
-        private void panel1_MouseDown(object sender, MouseEventArgs e)
+        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
         {
-            if (e.Button == MouseButtons.Left)
-            {
-                ReleaseCapture();
-                SendMessage(Handle, WM_NCLBUTTONDOWN, HT_CAPTION, 0);
-            }
+
         }
-
-
-
-
-
-
     }
 }

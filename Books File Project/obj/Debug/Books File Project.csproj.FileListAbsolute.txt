@@ -165,7 +165,6 @@ E:\Files_Project_Final\Books File Project\obj\Debug\Books File Project.exe
 E:\Files_Project_Final\Books File Project\obj\Debug\Books File Project.pdb
 E:\Files_Project_Final\Books File Project\bin\Debug\Books File Project.exe
 E:\Files_Project_Final\Books File Project\bin\Debug\Books File Project.pdb
-E:\Files_Project_Final\Books File Project\obj\Debug\Books File Project.csprojResolveAssemblyReference.cache
 E:\Files_Project_Final\Books File Project\obj\Debug\Books_File_Project.Admin.AddAdmin.resources
 E:\Files_Project_Final\Books File Project\obj\Debug\Books_File_Project.Admin.AddAuthor.resources
 E:\Files_Project_Final\Books File Project\obj\Debug\Books_File_Project.Admin.AddBook.resources
@@ -179,3 +178,5 @@ E:\Files_Project_Final\Books File Project\obj\Debug\Books_File_Project.User.View
 E:\Files_Project_Final\Books File Project\obj\Debug\Books_File_Project.User.ViewBooksInSpecificYear.resources
 E:\Files_Project_Final\Books File Project\obj\Debug\Books_File_Project.User.ViewBooksOfSpecificAuthor.resources
 E:\Files_Project_Final\Books File Project\obj\Debug\Books File Project.csproj.GenerateResource.Cache
+E:\Files_Project_Final\Books File Project\obj\Debug\Books File Project.csprojResolveAssemblyReference.cache
+E:\Files_Project_Final\Books File Project\obj\Debug\Books_File_Project.VALB.resources
