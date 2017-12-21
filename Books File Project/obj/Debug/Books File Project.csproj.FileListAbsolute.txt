@@ -159,3 +159,4 @@ C:\Users\chantal\Source\Repos\BooksFileProject\Books File Project\obj\Debug\Book
 C:\Users\chantal\Source\Repos\BooksFileProject\Books File Project\obj\Debug\Books File Project.csproj.CoreCompileInputs.cache
 C:\Users\chantal\Source\Repos\BooksFileProject\Books File Project\obj\Debug\Books File Project.exe
 C:\Users\chantal\Source\Repos\BooksFileProject\Books File Project\obj\Debug\Books File Project.pdb
+C:\Users\chantal\Source\Repos\BooksFileProject\Books File Project\obj\Debug\Books File Project.csprojResolveAssemblyReference.cache
