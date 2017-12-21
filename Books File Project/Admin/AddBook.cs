@@ -80,7 +80,7 @@ namespace Books_File_Project.Admin
                     sw.Write(PublishYear.Text);
                     sw.Write('@');
                     sw.Write(dic[AuthorId]);
-
+                    sw.Write('#');
 
                     //resets the text boxes 
                     SerialNumber.Clear();
