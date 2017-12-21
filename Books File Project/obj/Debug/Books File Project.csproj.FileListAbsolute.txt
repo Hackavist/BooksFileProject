@@ -179,3 +179,5 @@ E:\Files_Project_Final\Books File Project\obj\Debug\Books File Project.csproj.Ge
 E:\Files_Project_Final\Books File Project\obj\Debug\Books File Project.exe
 E:\Files_Project_Final\Books File Project\obj\Debug\Books File Project.pdb
 E:\Files_Project_Final\Books File Project\bin\Debug\Books File Project.pdb
+C:\Users\chantal\Source\Repos\BooksFileProject\Books File Project\obj\Debug\Books File Project.csprojResolveAssemblyReference.cache
+C:\Users\chantal\Source\Repos\BooksFileProject\Books File Project\obj\Debug\Books_File_Project.VALB.resources
