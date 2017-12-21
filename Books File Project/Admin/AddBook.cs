@@ -80,7 +80,7 @@ namespace Books_File_Project.Admin
                     sw.Write(PublishYear.Text);
                     sw.Write('@');
                     sw.Write(dic[AuthorId]);
-
+                    sw.Write('#');
 
                     //resets the text boxes 
                     SerialNumber.Clear();
@@ -124,11 +124,11 @@ namespace Books_File_Project.Admin
 
                 string[] x = new string[3];
 
-                x[0] = new string(id);
+                x[0] = new string(id).Trim('\0');
                 x[1] = new string(name);
                 x[2] = new string(email);
 
-                AutherIDs.Items.Add(x[0] + " " + x[1]);
+                AutherIDs.Items.Add(x[0] + " - " + x[1]);
                 dic[x[0] + " " + x[1]] = x[0];
 
             }
@@ -137,10 +137,10 @@ namespace Books_File_Project.Admin
             f.Close();
 
 
-            //foreach (var item in dic)
-            //{
-            //    AutherIDs.Items.Add(item.Key);
-            //}
+            /*foreach (var item in dic)
+            {
+                AutherIDs.Items.Add(item.Key);
+            }*/
         }
 
         private void AutherIDs_SelectedIndexChanged(object sender, EventArgs e)

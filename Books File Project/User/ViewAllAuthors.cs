@@ -154,5 +154,10 @@ namespace Books_File_Project.User
             uw.Show();
             this.Hide();
         }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

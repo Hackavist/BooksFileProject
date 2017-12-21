@@ -133,9 +133,14 @@ namespace Books_File_Project.User
             Book b = new Book();
             List<Book> x = new List<Book>();
 
-            if (string.IsNullOrEmpty(YearTextBox.Text) || string.IsNullOrWhiteSpace(YearTextBox.Text) /* || mesh arkam */)
+            if (string.IsNullOrEmpty(YearTextBox.Text) || string.IsNullOrWhiteSpace(YearTextBox.Text))
             {
                 MessageBox.Show("Please enter publish year.");
+            }
+           
+            else if (Program.IsNumbers(year) == false)
+            {
+                MessageBox.Show("Please enter correct year");
             }
             else
             {
@@ -157,11 +162,11 @@ namespace Books_File_Project.User
                         }
                     }
 
+                }
                     if (find == false)
                     {
                         MessageBox.Show("No Books Published in " + year);
                     }
-                }
             }
 
             sr.Close();

@@ -54,9 +54,9 @@
             this.dataGridView1.AllowUserToResizeRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Lime;
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.MediumSeaGreen;
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.SkyBlue;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.ForestGreen;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
             this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
@@ -67,7 +67,7 @@
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Lime;
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.MediumSeaGreen;
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
@@ -80,32 +80,35 @@
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Lime;
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.MediumSeaGreen;
             dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.SkyBlue;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.ForestGreen;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle4;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Top;
             this.dataGridView1.EnableHeadersVisualStyles = false;
             this.dataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.dataGridView1.Location = new System.Drawing.Point(0, 0);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.dataGridView1.RowHeadersVisible = false;
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(1217, 326);
+            this.dataGridView1.Size = new System.Drawing.Size(1369, 408);
             this.dataGridView1.TabIndex = 1;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // SortById
             // 
             this.SortById.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.SortById.Location = new System.Drawing.Point(121, 401);
-            this.SortById.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.SortById.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SortById.ForeColor = System.Drawing.Color.MediumSeaGreen;
+            this.SortById.Location = new System.Drawing.Point(136, 501);
+            this.SortById.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.SortById.Name = "SortById";
-            this.SortById.Size = new System.Drawing.Size(260, 60);
+            this.SortById.Size = new System.Drawing.Size(292, 75);
             this.SortById.TabIndex = 2;
             this.SortById.Text = "Show Authors Sorted by ID";
             this.SortById.UseVisualStyleBackColor = true;
@@ -114,10 +117,12 @@
             // SortByName
             // 
             this.SortByName.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.SortByName.Location = new System.Drawing.Point(539, 401);
-            this.SortByName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.SortByName.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SortByName.ForeColor = System.Drawing.Color.MediumSeaGreen;
+            this.SortByName.Location = new System.Drawing.Point(606, 501);
+            this.SortByName.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.SortByName.Name = "SortByName";
-            this.SortByName.Size = new System.Drawing.Size(260, 60);
+            this.SortByName.Size = new System.Drawing.Size(292, 75);
             this.SortByName.TabIndex = 3;
             this.SortByName.Text = "Show Authors Sorted by Name";
             this.SortByName.UseVisualStyleBackColor = true;
@@ -126,10 +131,12 @@
             // SortByEmail
             // 
             this.SortByEmail.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.SortByEmail.Location = new System.Drawing.Point(956, 401);
-            this.SortByEmail.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.SortByEmail.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SortByEmail.ForeColor = System.Drawing.Color.MediumSeaGreen;
+            this.SortByEmail.Location = new System.Drawing.Point(1076, 501);
+            this.SortByEmail.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.SortByEmail.Name = "SortByEmail";
-            this.SortByEmail.Size = new System.Drawing.Size(260, 60);
+            this.SortByEmail.Size = new System.Drawing.Size(292, 75);
             this.SortByEmail.TabIndex = 4;
             this.SortByEmail.Text = "Show Authors Sorted by Email";
             this.SortByEmail.UseVisualStyleBackColor = true;
@@ -139,10 +146,10 @@
             // 
             this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(23, 426);
+            this.pictureBox2.Location = new System.Drawing.Point(26, 532);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(44, 42);
+            this.pictureBox2.Size = new System.Drawing.Size(50, 52);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 8;
             this.pictureBox2.TabStop = false;
@@ -152,9 +159,9 @@
             // 
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Lime;
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.MediumSeaGreen;
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.SkyBlue;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.ForestGreen;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White;
             this.Author_ID.DefaultCellStyle = dataGridViewCellStyle3;
             this.Author_ID.HeaderText = "Author ID";
             this.Author_ID.Name = "Author_ID";
@@ -175,16 +182,16 @@
             // 
             // ViewAllAuthors
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(1217, 491);
+            this.ClientSize = new System.Drawing.Size(1369, 614);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.SortByEmail);
             this.Controls.Add(this.SortByName);
             this.Controls.Add(this.SortById);
             this.Controls.Add(this.dataGridView1);
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.Name = "ViewAllAuthors";
             this.Text = "ViewAllAuthors";
             this.Load += new System.EventHandler(this.ViewAllAuthors_Load);

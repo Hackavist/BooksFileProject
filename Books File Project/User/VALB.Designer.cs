@@ -40,7 +40,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label4.Location = new System.Drawing.Point(878, 0);
+            this.label4.Location = new System.Drawing.Point(1121, 17);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(20, 22);
             this.label4.TabIndex = 27;
@@ -52,7 +52,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label3.Location = new System.Drawing.Point(613, 0);
+            this.label3.Location = new System.Drawing.Point(827, 17);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(20, 22);
             this.label3.TabIndex = 26;
@@ -64,7 +64,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label2.Location = new System.Drawing.Point(315, 0);
+            this.label2.Location = new System.Drawing.Point(418, 17);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(20, 22);
             this.label2.TabIndex = 25;
@@ -76,7 +76,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label1.Location = new System.Drawing.Point(86, 0);
+            this.label1.Location = new System.Drawing.Point(124, 17);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(20, 22);
             this.label1.TabIndex = 24;
@@ -92,7 +92,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "VALB";
-            this.Size = new System.Drawing.Size(947, 52);
+            this.Size = new System.Drawing.Size(1366, 52);
             this.Load += new System.EventHandler(this.VALB_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

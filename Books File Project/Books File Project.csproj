@@ -154,6 +154,9 @@
     <EmbeddedResource Include="User\UserWelcome.resx">
       <DependentUpon>UserWelcome.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="User\VALB.resx">
+      <DependentUpon>VALB.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="User\ViewAllAuthors.resx">
       <DependentUpon>ViewAllAuthors.cs</DependentUpon>
     </EmbeddedResource>
