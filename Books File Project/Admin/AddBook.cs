@@ -66,12 +66,12 @@ namespace Books_File_Project.Admin
                 }
                 sr.Close();
                 fs.Close();
-                if (b==false)
+                if (b==false&&AutherIDs.SelectedIndex!=-1)
                 {
                     FileStream File = new FileStream("Books.txt", FileMode.Append, FileAccess.Write);
                     StreamWriter sw = new StreamWriter(File);
                     // gets the string value of the combobox 
-                    string AuthorId = AutherIDs.SelectedItem.ToString();
+                    string AuthorId = AutherIDs.SelectedItem.ToString().Trim('\0');
                     //writes the book using '@' dilimter only if the auther id is valid 
                     sw.Write(SerialNumber.Text);
                     sw.Write('@');
@@ -125,11 +125,11 @@ namespace Books_File_Project.Admin
                 string[] x = new string[3];
 
                 x[0] = new string(id).Trim('\0');
-                x[1] = new string(name);
-                x[2] = new string(email);
+                x[1] = new string(name).Trim('\0');
+                x[2] = new string(email).Trim('\0');
 
                 AutherIDs.Items.Add(x[0] + " - " + x[1]);
-                dic[x[0] + " " + x[1]] = x[0];
+                dic[x[0] + " - " + x[1]] = x[0];
 
             }
 

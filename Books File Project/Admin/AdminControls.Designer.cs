@@ -125,6 +125,7 @@
             this.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.Name = "AdminControls";
             this.Text = "AdminControls";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.AdminControls_Load);
             ((System.ComponentModel.ISupportInitialize)(this.bookadd)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.authoradd)).EndInit();
