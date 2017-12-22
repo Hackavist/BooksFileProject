@@ -65,6 +65,7 @@
             this.YearTextBox.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.YearTextBox.Location = new System.Drawing.Point(408, 112);
             this.YearTextBox.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.YearTextBox.MaxLength = 4;
             this.YearTextBox.Name = "YearTextBox";
             this.YearTextBox.Size = new System.Drawing.Size(282, 35);
             this.YearTextBox.TabIndex = 1;
