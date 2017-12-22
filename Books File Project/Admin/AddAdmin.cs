@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Books_File_Project.User;
 using System.IO;
 
 namespace Books_File_Project.Admin
@@ -31,14 +32,19 @@ namespace Books_File_Project.Admin
             string username = usernametextbox.Text;
             string passward = passwardtextbox.Text;
 
-            if (username.Length <= 0 || passward.Length <= 0)
+            if (username.Length == 0 || passward.Length == 0)
             {
                 MessageBox.Show("Please enter the required data.");
             }
+            else if (Program.IsDelimter(username) == true || Program.IsDelimter(passward) == true)
+            {
+
+                MessageBox.Show("You can't use the Character '@' or '#' in the Password or Username.");
+
+            }
             else
             {
-                //sanya wa7da w gy
-                //okai
+
                 FileStream fs = new FileStream("Admin.txt", FileMode.OpenOrCreate);
                 StreamReader sr = new StreamReader(fs);
                 string thefile = sr.ReadLine();
@@ -76,9 +82,6 @@ namespace Books_File_Project.Admin
             }
         }
 
-        private void AddAdmin_Load(object sender, EventArgs e)
-        {
 
-        }
     }
 }

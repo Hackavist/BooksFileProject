@@ -25,31 +25,30 @@ namespace Books_File_Project.User
 
         private void ViewAllBooks_Load(object sender, EventArgs e)
         {
-           
-
             Book bk = new Book();
 
             FileStream fs = new FileStream("Books.txt", FileMode.Open);
             StreamReader sr = new StreamReader(fs);
+
             string[] fields;
             string[] records;
             int hight = 180;
 
-
             while (sr.Peek() != -1)
             {
                 records = sr.ReadLine().Split('#');
-                for (int i = 0; i < records.Length - 1; i++)
+
+                for (int i = 0; i < records.Length-1 ; i++)
                 {
                     fields = records[i].Split('@');
                     VALB v = new VALB(fields[0], fields[1], fields[2], fields[3]);
 
-                  
+
                     flowLayoutPanel1.Controls.Add(v);
                     v.Location = new Point(100, hight);
 
 
-            hight += 60;
+                    hight += 60;
 
 
 
@@ -61,7 +60,7 @@ namespace Books_File_Project.User
 
         }
 
-  
+
 
         private void pictureBox2_Click_1(object sender, EventArgs e)
         {
@@ -69,9 +68,6 @@ namespace Books_File_Project.User
             this.Close();
         }
 
-        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
-        {
 
-        }
     }
 }

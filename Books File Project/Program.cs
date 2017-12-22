@@ -20,12 +20,20 @@ namespace Books_File_Project
             Application.SetCompatibleTextRenderingDefault(false);
             UserWelcome use = new UserWelcome();
             use.Show();
-            Application.Run();
-
-            
-            
+            Application.Run();   
         }
+        public static bool IsDelimter(string x)
+        {
+            for (int i = 0; i < x.Length; i++)
+            {
+                if (x[i] == '@' || x[i] == '#')
+                {
+                    return true;
+                }
+            }
 
+            return false;
+        }
         public static bool IsNumbers(string x)
         {
             for(int i=0;i<x.Length;i++)
@@ -39,9 +47,6 @@ namespace Books_File_Project
             return true;
         }
 
-        public static void trail()
-        {
-
-        }
+       
     }
 }
