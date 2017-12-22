@@ -60,6 +60,7 @@
             this.panel1.Controls.Add(this.label5);
             resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Name = "panel1";
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // label4
             // 
@@ -139,6 +140,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.MinimizeBox = false;
             this.Name = "ViewAllBooks";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.ViewAllBooks_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
